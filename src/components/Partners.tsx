@@ -105,6 +105,21 @@ export default function Partners() {
                 </div>
               </div>
             </motion.div>
+
+            {/* Clarivate Web of Science Logo */}
+            <motion.div 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              className="flex items-center transition-all cursor-pointer"
+            >
+              <img 
+                src="https://www.image2url.com/r2/default/images/1779255765146-de26fd3a-084d-4e65-b98e-8573d77b256a.png" 
+                alt="Clarivate Web of Science" 
+                className="h-12 md:h-16 w-auto object-contain mix-blend-multiply"
+              />
+            </motion.div>
           </div>
         </div>
       </div>
