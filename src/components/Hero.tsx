@@ -82,7 +82,7 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
             <img 
               src="https://image3.mouthshut.com/images/imagesp/925718552s.png" 
               alt="Partner Logo 1" 
-              className="h-10 sm:h-20 w-auto object-contain" 
+              className="h-10 sm:h-20 w-auto object-contain rounded-xl" 
               referrerPolicy="no-referrer"
             />
             <img 
