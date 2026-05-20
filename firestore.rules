@@ -1,0 +1,40 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Global Helpers
+    function isSignedIn() { return request.auth != null; }
+    function isAdmin() { return isSignedIn() && request.auth.token.email == 'satyamkruk07@gmail.com' && request.auth.token.email_verified == true; }
+    function isValidId(id) { return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$'); }
+    function incoming() { return request.resource.data; }
+    
+    // Registration Validation
+    function isValidRegistration(data) {
+      return data.keys().hasAll(['fullName', 'email', 'organization', 'phone', 'category', 'createdAt'])
+        && data.keys().size() == 6
+        && data.fullName is string && data.fullName.size() > 0 && data.fullName.size() <= 200
+        && data.email is string && data.email.size() <= 200
+        && data.organization is string && data.organization.size() <= 300
+        && data.phone is string && data.phone.size() <= 20
+        && data.category in ['Author', 'Student', 'Listener', 'Industry']
+        && data.createdAt == request.time;
+    }
+
+    match /registrations/{registrationId} {
+      // Allow creation by anyone (since it's a public registration form)
+      // but only if valid. We allow write: if false; as default-deny, 
+      // and explicitly grant create.
+      allow create: if isValidRegistration(incoming()) && isValidId(registrationId);
+      
+      // Only admins can read the registration list or individual registration (PII Protection)
+      allow read, list: if isAdmin();
+      
+      // Updates and Deletes are forbidden for public (immutable records)
+      allow update, delete: if isAdmin();
+    }
+  }
+}

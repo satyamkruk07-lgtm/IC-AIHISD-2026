@@ -1,0 +1,45 @@
+{
+  "entities": {
+    "Registration": {
+      "title": "Registration",
+      "description": "Conference registration details",
+      "type": "object",
+      "properties": {
+        "fullName": {
+          "type": "string",
+          "description": "Full name of the registrant"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Email address"
+        },
+        "organization": {
+          "type": "string",
+          "description": "Institution or Organization"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Contact number"
+        },
+        "category": {
+          "type": "string",
+          "enum": ["Author", "Student", "Listener", "Industry"],
+          "description": "Registration category"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of registration"
+        }
+      },
+      "required": ["fullName", "email", "organization", "phone", "category", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/registrations/{registrationId}": {
+      "schema": "Registration",
+      "description": "Collection of conference registrations"
+    }
+  }
+}

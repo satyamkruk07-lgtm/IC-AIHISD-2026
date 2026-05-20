@@ -1,0 +1,6 @@
+{
+  "name": "IC-AIHISD 2026 - AI in Healthcare Conference",
+  "description": "The International Conference on Artificial Intelligence in Healthcare and Intelligent System Development 2026.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

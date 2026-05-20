@@ -1,0 +1,60 @@
+'use client';
+
+import { MapPin, Phone, Mail, Globe, ExternalLink } from 'lucide-react';
+
+export default function Footer() {
+  return (
+    <footer className="bg-slate-900 text-white pt-20 pb-10">
+      <div className="container mx-auto px-6">
+        <div className="grid lg:grid-cols-4 gap-12 mb-16">
+          <div className="lg:col-span-2">
+            <h3 className="text-2xl font-display font-bold mb-6 tracking-tight">IC-AIHISD <span className="text-[#C83E34]">2026</span></h3>
+            <p className="text-slate-400 max-w-md mb-8 leading-relaxed">
+              International Conference on Artificial Intelligence in Healthcare and Intelligent System Development. Dedicated to bridging technology and life sciences.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-white mb-6 uppercase text-sm tracking-widest">Venue & Contact</h4>
+            <ul className="space-y-4 text-slate-400 text-sm">
+              <li className="flex gap-3">
+                <MapPin size={18} className="shrink-0 text-blue-400" />
+                <span>Shivalik College of Engineering, Shimla Bypass Rd, Dehradun, Uttarakhand, 248197.</span>
+              </li>
+              <li className="flex gap-3">
+                <Phone size={18} className="shrink-0 text-blue-400" />
+                <div>
+                  <p>+91-84332 17159</p>
+                  <p>+91-70883 11155</p>
+                </div>
+              </li>
+              <li className="flex gap-3 text-blue-400">
+                <Mail size={18} className="shrink-0" />
+                <a href="mailto:contact@icaihisd.edu" className="hover:underline">contact@icaihisd.edu</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-white mb-6 uppercase text-sm tracking-widest">Navigation</h4>
+            <ul className="space-y-3 text-slate-400 text-sm font-medium">
+              <li><a href="#" className="hover:text-blue-400 transition-colors flex items-center gap-1 group">Home <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" /></a></li>
+              <li><a href="#about" className="hover:text-blue-400 transition-colors flex items-center gap-1 group">About <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" /></a></li>
+              <li><a href="#committee" className="hover:text-blue-400 transition-colors flex items-center gap-1 group">Committee <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" /></a></li>
+              <li><a href="#timeline" className="hover:text-blue-400 transition-colors flex items-center gap-1 group">Important Dates <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" /></a></li>
+              <li><a href="#fees" className="hover:text-blue-400 transition-colors flex items-center gap-1 group">Registration <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" /></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
+          <p>© {new Date().getFullYear()} IC-AIHISD 2026. Organized by Department of CSE, SGOC.</p>
+          <div className="flex gap-6">
+            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition-colors">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
