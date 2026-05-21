@@ -14,7 +14,7 @@ export default function TechnicalCommittee() {
       ]
     },
     {
-      title: "Registeration",
+      title: "Registration",
       members: [
         { name: "Akansha Pundir" },
         { name: "Swati Kashyap" },
@@ -24,11 +24,11 @@ export default function TechnicalCommittee() {
     {
       title: "Reviewers",
       members: [
-        { name: "Dr. Santosh Joshi" },
         { name: "Dr. Surmadhur pant" },
-        { name: "Dr. Dev Baluni" },
+        { name: "Dr. UC Gupta" },
         { name: "Dr. Syatnam Mukhopadhya" },
-        { name: "Dr. UC Gupta" }
+        { name: "Dr. Santosh Joshi" },
+        { name: "Dr. Dev Baluni" }
       ]
     },
     {
