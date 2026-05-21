@@ -255,7 +255,7 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
                 <motion.div 
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="bg-white/95 backdrop-blur-xl px-8 py-10 md:px-16 md:py-12 rounded-[2rem] shadow-[0_20px_60px_rgba(0,0,0,0.15)] border border-white flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 mt-8 w-full max-w-4xl mx-auto"
+                  className="bg-white/95 backdrop-blur-xl px-4 py-10 md:px-16 md:py-12 rounded-[2rem] shadow-[0_20px_60px_rgba(0,0,0,0.15)] border border-white flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 mt-8 w-full max-w-4xl mx-auto"
                 >
                   <div className="flex flex-col items-center text-center group w-full md:w-1/2">
                     <div className="w-16 h-16 bg-[#003360]/5 text-[#003360] rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-[#003360]/10 group-hover:-translate-y-1 transition-transform duration-300">
@@ -263,8 +263,8 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
                     </div>
-                    <span className="text-[#C83E34] text-xs font-black uppercase tracking-[0.25em] mb-3">Primary Contact</span>
-                    <a href="tel:+918375052135" className="text-2xl md:text-3xl font-display font-bold text-slate-700 hover:text-[#003360] transition-colors">
+                    <span className="text-[#C83E34] text-xs font-black uppercase tracking-[0.25em] mb-3 whitespace-nowrap">Primary Contact</span>
+                    <a href="tel:+918375052135" className="text-2xl md:text-3xl font-display font-bold text-slate-700 hover:text-[#003360] transition-colors whitespace-nowrap">
                       +91 83750 52135
                     </a>
                   </div>
@@ -278,8 +278,8 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                       </svg>
                     </div>
-                    <span className="text-[#C83E34] text-xs font-black uppercase tracking-[0.25em] mb-3">Secondary Contact</span>
-                    <a href="tel:+919412034458" className="text-2xl md:text-3xl font-display font-bold text-slate-700 hover:text-[#003360] transition-colors">
+                    <span className="text-[#C83E34] text-xs font-black uppercase tracking-[0.25em] mb-3 whitespace-nowrap">Secondary Contact</span>
+                    <a href="tel:+919412034458" className="text-2xl md:text-3xl font-display font-bold text-slate-700 hover:text-[#003360] transition-colors whitespace-nowrap">
                       +91 94120 34458
                     </a>
                   </div>
