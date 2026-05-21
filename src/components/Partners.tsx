@@ -123,6 +123,34 @@ export default function Partners() {
           </div>
         </div>
       </div>
+
+      {/* Registration Partner Header */}
+      <div className="bg-partner-red py-6 text-center">
+        <h2 className="text-white text-3xl md:text-5xl font-black uppercase tracking-[0.1em]">
+          Registration Partner
+        </h2>
+      </div>
+
+      {/* Registration Partner Content */}
+      <div className="py-16">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="flex flex-col items-center gap-8"
+          >
+            <img 
+              src="/cmt.png" 
+              alt="Microsoft CMT Logo" 
+              className="h-20 md:h-28 w-auto object-contain"
+            />
+            <p className="text-slate-600 md:text-lg leading-relaxed font-medium">
+              The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+            </p>
+          </motion.div>
+        </div>
+      </div>
     </section>
   );
 }
