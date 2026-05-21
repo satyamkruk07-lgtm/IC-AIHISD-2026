@@ -1,45 +1,45 @@
-
 import { motion } from 'motion/react';
+import { UserCircle } from 'lucide-react';
 
 export default function TechnicalCommittee() {
   const sections = [
     {
       title: "Technical Commitee",
       members: [
-        "Kushpreet Singh",
-        "Kumar Rethik",
-        "pradeep chahuhan",
-        "Vipin Uniyal",
-        "More to be added"
+        { name: "Kushpreet Singh" },
+        { name: "Kumar Rethik" },
+        { name: "pradeep chahuhan" },
+        { name: "Vipin Uniyal" },
+        { name: "More to be added" }
       ]
     },
     {
       title: "Registeration",
       members: [
-        "Akansha Pundir",
-        "Swati Kashyap",
-        "vandana bansal"
+        { name: "Akansha Pundir" },
+        { name: "Swati Kashyap" },
+        { name: "vandana bansal" }
       ]
     },
     {
       title: "Reviewers",
       members: [
-        "Dr. Santosh Joshi",
-        "Dr. Surmadhur pant",
-        "Dr. Dev Baluni",
-        "Dr. Syatnam Mukhopadhya",
-        "Dr. UC Gupta"
+        { name: "Dr. Santosh Joshi" },
+        { name: "Dr. Surmadhur pant" },
+        { name: "Dr. Dev Baluni" },
+        { name: "Dr. Syatnam Mukhopadhya" },
+        { name: "Dr. UC Gupta" }
       ]
     },
     {
       title: "Track Session",
       members: [
-        "Brijesh",
-        "Rajkumar",
-        "Mohit",
-        "Abhishek",
-        "Syed",
-        "Shivali"
+        { name: "Brijesh" },
+        { name: "Rajkumar" },
+        { name: "Mohit" },
+        { name: "Abhishek" },
+        { name: "Syed" },
+        { name: "Shivali" }
       ]
     }
   ];
@@ -47,33 +47,45 @@ export default function TechnicalCommittee() {
   return (
     <div id="technical-committee-section" className="py-20 bg-white min-h-screen">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto space-y-20">
+        <div className="max-w-6xl mx-auto space-y-24">
           {sections.map((section, idx) => (
-            <motion.div 
-              key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center"
-            >
-              <h3 className="text-4xl md:text-6xl font-black text-[#C83E34] mb-10 uppercase tracking-tight italic font-display">
+            <div key={idx} className="text-center">
+              <motion.h3 
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6 }}
+                className="text-4xl md:text-6xl font-black text-[#C83E34] mb-12 uppercase tracking-tight italic font-display"
+              >
                 {section.title}
-              </h3>
+              </motion.h3>
               
-              <div className="space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-center justify-items-center">
                 {section.members.map((member, mIdx) => (
-                  <motion.p 
+                  <motion.div 
                     key={mIdx}
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ delay: mIdx * 0.1 }}
-                    className="text-xl md:text-2xl font-bold text-slate-800"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: (mIdx % 4) * 0.1, duration: 0.6, type: "spring", stiffness: 50 }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    className="bg-white rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-slate-100 hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)] transition-all duration-300 group w-full max-w-[280px]"
                   >
-                    {mIdx + 1}. {member}
-                  </motion.p>
+                    <div className="w-28 h-28 rounded-full overflow-hidden bg-slate-50 mb-6 border-4 border-slate-100 shadow-sm flex items-center justify-center group-hover:scale-105 group-hover:border-med-blue/20 transition-all duration-300">
+                      {/* @ts-ignore - Assuming image might be added later */}
+                      {member.image ? (
+                        /* @ts-ignore */
+                        <img src={member.image} alt={member.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                      ) : (
+                        <UserCircle size={56} strokeWidth={1.5} className="text-slate-300 group-hover:text-med-blue transition-colors duration-300" />
+                      )}
+                    </div>
+                    <h4 className="text-xl font-bold text-slate-800 font-sans group-hover:text-[#C83E34] transition-colors duration-300 capitalize">
+                      {member.name}
+                    </h4>
+                  </motion.div>
                 ))}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
