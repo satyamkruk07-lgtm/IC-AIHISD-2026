@@ -67,20 +67,11 @@ export default function Navbar({ onEmptyLinkClick, onRegisterClick }: { onEmptyL
     >
       <div className="max-w-[1600px] mx-auto px-4 sm:px-8 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 sm:gap-3 shrink-0" onClick={() => onEmptyLinkClick?.('')}>
-          <div className={cn(
-            "w-8 h-8 sm:w-10 sm:h-10 rounded shadow-lg flex items-center justify-center font-black text-lg sm:text-xl transition-colors",
-            isScrolled || isMobileMenuOpen ? "bg-med-blue text-white" : "bg-white text-med-blue"
-          )}>
-            I
-          </div>
-          <div className="flex flex-col">
-            <span className={cn(
-              "font-display font-extrabold text-lg sm:text-2xl tracking-tighter leading-none",
-              isScrolled || isMobileMenuOpen ? "text-slate-900" : "text-white"
-            )}>
-              IC-AIHISD <span className={isScrolled ? "text-med-blue" : "text-white/80"}>2026</span>
-            </span>
-          </div>
+          <img 
+            src="/logo.png" 
+            alt="IC-AIHISD Logo" 
+            className="h-10 sm:h-14 w-auto object-contain"
+          />
         </a>
 
         {/* Desktop Nav */}

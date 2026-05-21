@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-4 gap-12 mb-16">
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-display font-bold mb-6 tracking-tight">IC-AIHISD <span className="text-[#C83E34]">2026</span></h3>
+            <img src="/logo.png" alt="IC-AIHISD Logo" className="h-16 w-auto object-contain mb-6" />
             <p className="text-slate-400 max-w-md mb-8 leading-relaxed">
               International Conference on Artificial Intelligence in Healthcare and Intelligent System Development. Dedicated to bridging technology and life sciences.
             </p>
