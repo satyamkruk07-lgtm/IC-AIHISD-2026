@@ -43,7 +43,7 @@ export default function App() {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white overflow-hidden w-full relative">
       <Navbar 
         onEmptyLinkClick={handleLinkClick} 
         onRegisterClick={() => setIsRegisterOpen(true)}
