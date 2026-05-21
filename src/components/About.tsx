@@ -71,17 +71,17 @@ export default function About() {
             <p className="text-slate-600 mb-8 leading-relaxed">
               The Department of Computer Science and Engineering is at the forefront of this initiative, organizing IC-AIHISD 2026 to foster international collaboration and technological growth.
             </p>
-            <div className="p-4 bg-white rounded-xl border border-slate-200 flex items-center justify-between">
+            <div className="p-4 sm:p-6 bg-white rounded-xl border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0 text-center sm:text-left">
               <div>
                 <p className="text-xs font-bold text-slate-400 uppercase">Established</p>
                 <p className="text-xl font-bold text-med-blue">2008</p>
               </div>
-              <div className="h-8 w-px bg-slate-200" />
+              <div className="h-px w-full sm:h-8 sm:w-px bg-slate-200" />
               <div>
                 <p className="text-xs font-bold text-slate-400 uppercase">Status</p>
                 <p className="text-xl font-bold text-med-blue">UGC Autonomous</p>
               </div>
-              <div className="h-8 w-px bg-slate-200" />
+              <div className="h-px w-full sm:h-8 sm:w-px bg-slate-200" />
                <div>
                 <p className="text-xs font-bold text-slate-400 uppercase">Location</p>
                 <p className="text-xl font-bold text-med-blue">Dehradun</p>
