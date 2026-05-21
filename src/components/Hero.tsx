@@ -97,13 +97,16 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="flex justify-center mb-6"
+            className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6"
           >
             <img 
               src="/logo.png" 
               alt="IC-AIHISD Logo" 
               className="h-28 md:h-40 lg:h-48 w-auto object-contain drop-shadow-2xl"
             />
+            <h1 className="text-4xl md:text-6xl font-display font-black tracking-tight text-shadow text-white text-center md:text-left">
+              IC-AIHISD<br />2026
+            </h1>
           </motion.div>
           
           <motion.p 

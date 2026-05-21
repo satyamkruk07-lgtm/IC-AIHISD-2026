@@ -72,6 +72,14 @@ export default function Navbar({ onEmptyLinkClick, onRegisterClick }: { onEmptyL
             alt="IC-AIHISD Logo" 
             className="h-10 sm:h-14 w-auto object-contain"
           />
+          <div className="flex flex-col">
+            <span className={cn(
+              "font-display font-extrabold text-lg sm:text-2xl tracking-tighter leading-none",
+              isScrolled || isMobileMenuOpen ? "text-slate-900" : "text-white"
+            )}>
+              IC-AIHISD <span className={isScrolled ? "text-med-blue" : "text-white/80"}>2026</span>
+            </span>
+          </div>
         </a>
 
         {/* Desktop Nav */}
