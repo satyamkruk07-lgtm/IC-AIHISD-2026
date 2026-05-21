@@ -251,13 +251,45 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
                    {updateNotice}
                  </h3>
               </motion.div>
-              <motion.p 
-                animate={{ opacity: [0.7, 1, 0.7], scale: [1, 1.05, 1] }}
-                transition={{ duration: 3, repeat: Infinity }}
-                className="text-[#000066] bg-white/95 backdrop-blur-md px-10 py-4 rounded-full font-black text-2xl md:text-5xl tracking-tight shadow-2xl border border-white/50"
-              >
-                To be Updated Soon.
-              </motion.p>
+              {updateNotice === 'CONTACT INFORMATION' ? (
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="bg-white/95 backdrop-blur-md px-8 py-8 md:px-12 md:py-10 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-white/50 flex flex-col md:flex-row items-center gap-8 md:gap-16 mt-4 w-full"
+                >
+                  <div className="flex flex-col items-center gap-2 group">
+                    <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-2 shadow-inner">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                    </div>
+                    <span className="text-[#C83E34] text-xs font-bold uppercase tracking-[0.2em]">Primary Support</span>
+                    <a href="tel:+918375052135" className="text-3xl md:text-4xl font-display font-black text-slate-800 group-hover:text-[#003360] transition-colors tracking-tight">
+                      +91 83750 52135
+                    </a>
+                  </div>
+                  <div className="hidden md:block w-px h-24 bg-gradient-to-b from-transparent via-slate-300 to-transparent"></div>
+                  <div className="flex flex-col items-center gap-2 group">
+                    <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-2 shadow-inner">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                    </div>
+                    <span className="text-[#C83E34] text-xs font-bold uppercase tracking-[0.2em]">Secondary Support</span>
+                    <a href="tel:+919412034458" className="text-3xl md:text-4xl font-display font-black text-slate-800 group-hover:text-[#003360] transition-colors tracking-tight">
+                      +91 94120 34458
+                    </a>
+                  </div>
+                </motion.div>
+              ) : (
+                <motion.p 
+                  animate={{ opacity: [0.7, 1, 0.7], scale: [1, 1.05, 1] }}
+                  transition={{ duration: 3, repeat: Infinity }}
+                  className="text-[#000066] bg-white/95 backdrop-blur-md px-10 py-4 rounded-full font-black text-2xl md:text-5xl tracking-tight shadow-2xl border border-white/50"
+                >
+                  To be Updated Soon.
+                </motion.p>
+              )}
             </motion.div>
           )}
         </AnimatePresence>
