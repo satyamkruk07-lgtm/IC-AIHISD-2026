@@ -143,11 +143,14 @@ export default function Partners() {
             <img 
               src="/cmt.png" 
               alt="Microsoft CMT Logo" 
-              className="h-20 md:h-28 w-auto object-contain"
+              className="h-20 md:h-28 w-auto object-contain mb-2"
             />
-            <p className="text-slate-600 md:text-lg leading-relaxed font-medium">
-              The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-            </p>
+            <div className="w-full">
+              <h3 className="text-2xl font-bold text-slate-900 mb-4 text-center">CMT ACKNOWLEDGMENT:</h3>
+              <p className="text-slate-600 md:text-lg leading-relaxed font-medium text-left">
+                The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+              </p>
+            </div>
           </motion.div>
         </div>
       </div>
