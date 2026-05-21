@@ -70,7 +70,11 @@ export default function Committee() {
           role: "ASSOCIATE DEAN, CBII",
           image: "https://cbii.shivalikcollege.edu.in/assets/ak-DP7NnX5A.jpg"
         },
-        { name: "ER. KULDEEP GODIYAL", role: "ASSOCIATE DEAN, CBII" }
+        { 
+          name: "ER. KULDEEP GODIYAL", 
+          role: "ASSOCIATE DEAN, CBII",
+          image: "/kuldeep.png"
+        }
       ]
     },
     {
