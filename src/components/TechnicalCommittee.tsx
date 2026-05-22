@@ -17,7 +17,7 @@ export default function TechnicalCommittee() {
     {
       title: "Registration",
       members: [
-        { name: "Akansha Pundir", image: "/akansha.jpeg" },
+        { name: "Aakanksha Pundir", image: "/akansha.jpeg" },
         { name: "Swati Kashyap", image: "/swati.jpeg" },
         { name: "vandana bansal" }
       ]
