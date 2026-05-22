@@ -38,17 +38,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-bold text-white mb-6 uppercase text-sm tracking-widest">Navigation</h4>
-            <ul className="space-y-3 text-slate-400 text-sm font-medium">
-              <li><a href="#" className="hover:text-blue-400 transition-colors flex items-center gap-1 group">Home <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" /></a></li>
-              <li><a href="#about" className="hover:text-blue-400 transition-colors flex items-center gap-1 group">About <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" /></a></li>
-              <li><a href="#committee" className="hover:text-blue-400 transition-colors flex items-center gap-1 group">Committee <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" /></a></li>
-              <li><a href="#timeline" className="hover:text-blue-400 transition-colors flex items-center gap-1 group">Important Dates <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" /></a></li>
-              <li><a href="#fees" className="hover:text-blue-400 transition-colors flex items-center gap-1 group">Registration <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" /></a></li>
-            </ul>
-          </div>
-        </div>
 
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
           <p>© {new Date().getFullYear()} IC-AIHISD 2026. Organized by Department of CSE, SGOC.</p>
