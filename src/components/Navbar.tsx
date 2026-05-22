@@ -135,12 +135,9 @@ export default function Navbar({ onEmptyLinkClick, onRegisterClick }: { onEmptyL
 
         <div className="hidden sm:block shrink-0">
           <a 
-            href="#fees" 
-            onClick={(e) => {
-              e.preventDefault();
-              onRegisterClick?.();
-              onEmptyLinkClick?.('');
-            }}
+            href="https://cmt3.research.microsoft.com/ICAIHISD2026" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className={cn(
               "px-5 py-2.5 rounded shadow-lg font-bold text-xs 2xl:text-sm uppercase tracking-wider transition-all",
               isScrolled || isMobileMenuOpen
@@ -211,14 +208,11 @@ export default function Navbar({ onEmptyLinkClick, onRegisterClick }: { onEmptyL
               </div>
             ))}
             <a 
-              href="#fees" 
+              href="https://cmt3.research.microsoft.com/ICAIHISD2026" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary text-center"
-              onClick={(e) => {
-                e.preventDefault();
-                setIsMobileMenuOpen(false);
-                onRegisterClick?.();
-                onEmptyLinkClick?.('');
-              }}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Register Now
             </a>
