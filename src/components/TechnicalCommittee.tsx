@@ -28,7 +28,10 @@ export default function TechnicalCommittee() {
         { name: "Dr. UC Gupta" },
         { name: "Dr. Syatnam Mukhopadhya" },
         { name: "Dr. Santosh Joshi" },
-        { name: "Dr. Dev Baluni" }
+        { 
+          name: "Dr. Dev Baloni",
+          image: "/dev_baloni.jpeg"
+        }
       ]
     },
     {

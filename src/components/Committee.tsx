@@ -59,7 +59,11 @@ export default function Committee() {
           role: "ASSISTANT PROFESSOR",
           image: "https://cbii.shivalikcollege.edu.in/assets/kshitijjain-DvrFwvbC.jpg"
         },
-        { name: "DR. DEV BALUNI", role: "HEAD CSE" }
+        { 
+          name: "DR. DEV BALONI", 
+          role: "HEAD CSE",
+          image: "/dev_baloni.jpeg"
+        }
       ]
     },
     {
