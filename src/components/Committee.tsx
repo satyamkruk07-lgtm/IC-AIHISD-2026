@@ -80,7 +80,11 @@ export default function Committee() {
     {
       title: "Organizing Secretary",
       members: [
-        { name: "DR. SONO BHARDWAJ", role: "ASSOCIATE PROFESSOR" },
+        { 
+          name: "DR. SONO BHARDWAJ", 
+          role: "ASSOCIATE PROFESSOR",
+          image: "/sono_bhardwaj.jpeg"
+        },
         { 
           name: "ER. ASHISH KUMAR GUPTA", 
           role: "ASSISTANT PROFESSOR",
