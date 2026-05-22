@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white pt-20 pb-10">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid lg:grid-cols-3 gap-12 mb-16">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-4 mb-6">
               <img src="/logo.png" alt="IC-AIHISD Logo" className="h-16 w-auto object-contain" />
@@ -38,6 +38,7 @@ export default function Footer() {
             </ul>
           </div>
 
+        </div>
 
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
           <p>© {new Date().getFullYear()} IC-AIHISD 2026. Organized by Department of CSE, SGOC.</p>
