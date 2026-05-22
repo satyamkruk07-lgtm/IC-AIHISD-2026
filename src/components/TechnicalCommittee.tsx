@@ -6,9 +6,9 @@ export default function TechnicalCommittee() {
     {
       title: "Technical Commitee",
       members: [
-        { name: "Kushpreet Singh" },
-        { name: "Kumar Rethik" },
-        { name: "pradeep chahuhan" },
+        { name: "Kushpreet Singh", image: "/kushpreet.jpeg" },
+        { name: "Kumar Rethik", image: "/rethik.jpeg" },
+        { name: "pradeep chahuhan", image: "/pradeep.jpeg" },
         { name: "Vipin Uniyal" },
         { name: "More to be added" }
       ]
@@ -16,18 +16,18 @@ export default function TechnicalCommittee() {
     {
       title: "Registration",
       members: [
-        { name: "Akansha Pundir" },
-        { name: "Swati Kashyap" },
+        { name: "Akansha Pundir", image: "/akansha.jpeg" },
+        { name: "Swati Kashyap", image: "/swati.jpeg" },
         { name: "vandana bansal" }
       ]
     },
     {
       title: "Reviewers",
       members: [
-        { name: "Dr. Surmadhur pant" },
+        { name: "Dr. Surmadhur pant", image: "https://shivalikcollege.edu.in/wp-content/uploads/2025/05/PANT-SIR.png" },
         { name: "Dr. UC Gupta" },
-        { name: "Dr. Syatnam Mukhopadhya" },
-        { name: "Dr. Santosh Joshi" },
+        { name: "Dr. Syatnam Mukhopadhya", image: "https://shivalikcollege.edu.in/wp-content/uploads/2022/11/Dr.-Sayantan.png" },
+        { name: "Dr. Santosh Joshi", image: "https://shivalikcollege.edu.in/wp-content/uploads/2023/11/Santosh-JoshI.jpg" },
         { 
           name: "Dr. Dev Baloni",
           image: "/dev_baloni.jpeg"
