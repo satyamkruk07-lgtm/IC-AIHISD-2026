@@ -10,7 +10,8 @@ export default function TechnicalCommittee() {
         { name: "Kumar Rethik", image: "/rethik.jpeg" },
         { name: "pradeep chahuhan", image: "/pradeep.jpeg" },
         { name: "Vipin Uniyal" },
-        { name: "More to be added" }
+        { name: "Vinayak Kumar", image: "/vinayak.jpeg" },
+        { name: "More to be added", image: "https://tse2.mm.bing.net/th/id/OIP.ACEmlIFqjlQwpLuV3sky5gHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" }
       ]
     },
     {
@@ -40,7 +41,7 @@ export default function TechnicalCommittee() {
         { name: "Brijesh" },
         { name: "Rajkumar" },
         { name: "Mohit" },
-        { name: "Abhishek" },
+        { name: "Abhishek", image: "/abhishek.jpeg" },
         { name: "Syed" },
         { name: "Shivali" }
       ]
