@@ -42,7 +42,7 @@ export default function TechnicalCommittee() {
         { name: "Rajkumar" },
         { name: "Mohit" },
         { name: "Abhishek", image: "/abhishek.jpeg" },
-        { name: "Syed" },
+        { name: "Amaan", image: "/amaan.jpeg" },
         { name: "Shivali" }
       ]
     }
