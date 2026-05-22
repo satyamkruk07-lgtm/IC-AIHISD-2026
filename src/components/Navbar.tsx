@@ -74,7 +74,7 @@ export default function Navbar({ onEmptyLinkClick, onRegisterClick }: { onEmptyL
           />
           <div className="flex flex-col">
             <span className={cn(
-              "font-display font-extrabold text-lg sm:text-2xl tracking-tighter leading-none",
+              "font-display font-extrabold text-base sm:text-2xl tracking-tighter leading-none",
               isScrolled || isMobileMenuOpen ? "text-slate-900" : "text-white"
             )}>
               IC-AIHISD <span className={isScrolled ? "text-med-blue" : "text-white/80"}>2026</span>
@@ -149,18 +149,34 @@ export default function Navbar({ onEmptyLinkClick, onRegisterClick }: { onEmptyL
           </a>
         </div>
 
-        {/* Mobile Toggle */}
-        <button 
-          className="xl:hidden"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          <div className={cn(
-            "p-2 rounded-lg transition-colors",
-            isScrolled || isMobileMenuOpen ? "text-slate-900" : "text-white"
-          )}>
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </div>
-        </button>
+        <div className="flex items-center gap-2 shrink-0 z-50">
+          <a 
+            href="https://cmt3.research.microsoft.com/ICAIHISD2026" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className={cn(
+              "sm:hidden px-3 py-1.5 rounded shadow font-bold text-[10px] uppercase tracking-widest transition-all",
+              isScrolled || isMobileMenuOpen
+                ? "bg-med-blue text-white" 
+                : "bg-white/20 backdrop-blur-md text-white border border-white/30"
+            )}
+          >
+            Register
+          </a>
+
+          {/* Mobile Toggle */}
+          <button 
+            className="xl:hidden -mr-2 sm:-mr-0"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            <div className={cn(
+              "p-2 rounded-lg transition-colors",
+              isScrolled || isMobileMenuOpen ? "text-slate-900" : "text-white"
+            )}>
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </div>
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
