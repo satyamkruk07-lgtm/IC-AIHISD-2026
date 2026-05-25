@@ -45,6 +45,23 @@ export default function TechnicalCommittee() {
         { name: "Amaan", image: "/amaan.jpeg" },
         { name: "Shivali" }
       ]
+    },
+    {
+      title: "Student Convenor",
+      members: [
+        { name: "Rifat Pravez", role: "Chairperson (ACM)" },
+        { name: "Shivam Kumar", role: "Vice Chairperson (ACM)" },
+        { name: "Aman Bhardwaj", role: "Treasurer (ACM)" },
+        { name: "Gaurav Kumar", role: "Secretary (ACM)" },
+        { name: "Kumar Satyam", role: "Graphic Head (ACM)" },
+        { name: "Prashant Sekhar", role: "C.A Lead (ACM)" },
+        { name: "Ishant", role: "C.R Head (ACM)" },
+        { name: "Himanshu Kumar", role: "Media Head (ACM)" },
+        { name: "Priyanjali", role: "Media Vice Head (ACM)" },
+        { name: "Shubham", role: "ACM Member" },
+        { name: "Prachi Rawat", role: "ACM Member" },
+        { name: "Srishti Raj", role: "ACM Member" }
+      ]
     }
   ];
 
@@ -86,6 +103,13 @@ export default function TechnicalCommittee() {
                     <h4 className="text-xl font-bold text-slate-800 font-sans group-hover:text-[#C83E34] transition-colors duration-300 capitalize">
                       {member.name}
                     </h4>
+                    {/* @ts-ignore */}
+                    {member.role && (
+                      <p className="text-med-blue font-bold text-sm tracking-wide mt-2 uppercase">
+                        {/* @ts-ignore */}
+                        {member.role}
+                      </p>
+                    )}
                   </motion.div>
                 ))}
               </div>
