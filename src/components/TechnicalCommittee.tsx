@@ -10,8 +10,7 @@ export default function TechnicalCommittee() {
         { name: "Kumar Rethik", image: "/rethik.jpeg" },
         { name: "pradeep chahuhan", image: "/pradeep.jpeg" },
         { name: "Vipin Uniyal" },
-        { name: "Vinayak Kumar", image: "/vinayak.jpeg" },
-        { name: "More to be added", image: "https://tse2.mm.bing.net/th/id/OIP.ACEmlIFqjlQwpLuV3sky5gHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" }
+        { name: "Vinayak Kumar", image: "/vinayak.jpeg" }
       ]
     },
     {
@@ -27,12 +26,13 @@ export default function TechnicalCommittee() {
       members: [
         { name: "Dr. Surmadhur pant", image: "https://shivalikcollege.edu.in/wp-content/uploads/2025/05/PANT-SIR.png" },
         { name: "Dr. UC Gupta" },
-        { name: "Dr. Syatnam Mukhopadhya", image: "https://shivalikcollege.edu.in/wp-content/uploads/2022/11/Dr.-Sayantan.png" },
         { name: "Dr. Santosh Joshi", image: "https://shivalikcollege.edu.in/wp-content/uploads/2023/11/Santosh-JoshI.jpg" },
+        { name: "Dr. Syatnam Mukhopadhya", image: "https://shivalikcollege.edu.in/wp-content/uploads/2022/11/Dr.-Sayantan.png" },
         { 
           name: "Dr. Dev Baloni",
           image: "/dev_baloni.jpeg"
-        }
+        },
+        { name: "Dr. Vijaylakshmi Sajwan" }
       ]
     },
     {
