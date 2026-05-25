@@ -63,7 +63,7 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
       {/* Full Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://dehraduncolleges.com/wp-content/uploads/2022/11/246688154_6339289056144995_5858469245325378665_n.jpg" 
+          src="/shivalik_college.jpg" 
           alt="Shivalik College Dehradun" 
           className="w-full h-full object-cover brightness-[0.35]"
         />
