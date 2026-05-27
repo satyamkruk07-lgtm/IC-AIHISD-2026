@@ -46,7 +46,9 @@ export default function TechnicalCommittee() {
         { name: "Mr. Mohit Singh Bisht" },
         { name: "Mr. Abhishek Kushwaha", image: "/abhishek.jpeg" },
         { name: "Mr. Syed Amaan Hasan", image: "/amaan.jpeg" },
-        { name: "Ms. Shivali Pundir" }
+        { name: "Ms. Shivali Pundir" },
+        { name: "Bhuvan Chandra Bhatt", image: "/bhuvan.png" },
+        { name: "Mr. Mohammad Sayeed", image: "/mohammad.png" }
       ]
     },
     {
