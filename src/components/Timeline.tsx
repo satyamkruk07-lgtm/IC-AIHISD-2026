@@ -4,8 +4,8 @@ import { motion } from 'motion/react';
 import { CalendarDays, ChevronRight } from 'lucide-react';
 
 const timelineData = [
-  { date: "20th May 2026", event: "Call for Papers", type: "submission" },
-  { date: "20th July 2026", event: "Last date of Submission", type: "submission" },
+  { date: "30th May 2026", event: "Call for Papers", type: "submission" },
+  { date: "25th July 2026", event: "Last date of Submission", type: "submission" },
   { date: "10th August 2026", event: "Acceptance Notification", type: "notification" },
   { date: "25th August 2026", event: "Registration & Fee Submission", type: "registration" },
   { date: "10th September 2026", event: "Camera Ready Paper Submission", type: "submission" },
