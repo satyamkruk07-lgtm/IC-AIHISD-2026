@@ -33,7 +33,7 @@ export default function TechnicalCommittee() {
           image: "/dev_baloni.jpeg"
         },
         { name: "Dr. Vijaylakshmi Sajwan", image: "/vijaylakshmi.jpeg" },
-        { name: "Mr. Sartaj Khan" },
+        { name: "Mr. Sartaj Khan", image: "/sartaj.jpeg" },
         { name: "Dr. Paramendra Kumar", image: "/paramendra.jpeg" }
       ]
     },
