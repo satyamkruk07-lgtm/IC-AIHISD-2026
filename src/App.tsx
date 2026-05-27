@@ -19,14 +19,17 @@ import RegistrationModal from './components/RegistrationModal';
 export default function App() {
   const [updateNotice, setUpdateNotice] = useState<string | null>(null);
   const [isTechnicalCommittee, setIsTechnicalCommittee] = useState(false);
+  const [isKeynote, setIsKeynote] = useState(false);
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
 
   const handleLinkClick = (name: string) => {
     if (name === 'CONFERENCE COMMITTEE') {
       setIsTechnicalCommittee(true);
+      setIsKeynote(false);
       setUpdateNotice(null);
     } else if (name === 'KEYNOTES & PLENARY') {
       setIsTechnicalCommittee(false);
+      setIsKeynote(true);
       setUpdateNotice(null);
       setTimeout(() => {
         const element = document.getElementById('keynotes');
@@ -36,6 +39,7 @@ export default function App() {
       }, 100);
     } else if (name === 'ORGANIZING COMMITTEE') {
       setIsTechnicalCommittee(false);
+      setIsKeynote(false);
       setUpdateNotice(null);
       setTimeout(() => {
         const element = document.getElementById('committee');
@@ -45,9 +49,11 @@ export default function App() {
       }, 100);
     } else if (name === '') {
       setIsTechnicalCommittee(false);
+      setIsKeynote(false);
       setUpdateNotice(null);
     } else if (name) {
       setIsTechnicalCommittee(false);
+      setIsKeynote(false);
       setUpdateNotice(name);
     }
   };
@@ -62,13 +68,14 @@ export default function App() {
       
       {isTechnicalCommittee ? (
         <TechnicalCommittee />
+      ) : isKeynote ? (
+        <KeynoteSpeakers />
       ) : (
         <>
           {!updateNotice && (
             <>
               <About />
               <Timeline />
-              <KeynoteSpeakers />
               <Committee />
               <Fees />
               <Partners />
