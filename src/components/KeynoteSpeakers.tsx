@@ -49,37 +49,54 @@ export default function KeynoteSpeakers() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12"
           >
-            {speakers.map((speaker, idx) => (
-              <div key={idx} className="bg-white p-6 sm:p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-slate-100 flex flex-col text-center group hover:-translate-y-2 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300">
-                <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-4 sm:mb-6 rounded-full overflow-hidden bg-slate-100 flex items-center justify-center border-4 border-white shadow-md ring-1 ring-slate-200">
-                  {speaker.image ? (
-                    <img 
-                      src={speaker.image} 
-                      alt={speaker.name}
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <UserCircle size={60} className="text-slate-300" />
-                  )}
+            {[speakers.slice(0, 2), speakers.slice(2, 4)].map((rowSpeakers, rowIdx) => (
+              <div key={rowIdx}>
+                <div className="relative flex justify-center">
+                  <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-black hidden sm:block -translate-x-1/2 z-0 opacity-20" />
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-4xl relative z-10">
+                    {rowSpeakers.map((speaker, idx) => (
+                      <div key={idx} className="flex justify-center">
+                        <div className="flex flex-col items-center text-center px-4 py-4 w-full sm:w-[300px] group">
+                          <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-[#C83E34]/20 shadow-sm transition-transform hover:scale-105 flex items-center justify-center bg-slate-50">
+                            {speaker.image ? (
+                              <img 
+                                src={speaker.image} 
+                                alt={speaker.name}
+                                className="w-full h-full object-cover"
+                              />
+                            ) : (
+                              <UserCircle size={40} className="text-slate-300" />
+                            )}
+                          </div>
+                          <h4 className="text-[15px] sm:text-[17px] font-black text-slate-900 tracking-tight leading-tight uppercase font-sans">
+                            {speaker.name}
+                          </h4>
+                          {speaker.role && (
+                            <p className="text-[13px] sm:text-[14px] font-bold text-slate-800 mt-1 uppercase tracking-wide">
+                              {speaker.role}
+                            </p>
+                          )}
+                          <div className="mt-2 space-y-0.5">
+                            {speaker.college && (
+                              <p className="text-[13px] sm:text-[14px] text-slate-600 font-medium">
+                                {speaker.college}
+                              </p>
+                            )}
+                            {speaker.location && (
+                              <p className="text-[12px] sm:text-[13px] text-slate-500 italic">
+                                {speaker.location}
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-                <h4 className="text-[16px] sm:text-[18px] font-black text-slate-900 tracking-tight leading-tight uppercase font-sans">
-                  {speaker.name}
-                </h4>
-                <p className="text-[13px] sm:text-[14px] font-bold text-slate-800 mt-1 uppercase tracking-wide">
-                  {speaker.role}
-                </p>
-                <div className="mt-2 space-y-0.5">
-                  <p className="text-[13px] sm:text-[14px] text-slate-600 font-medium">
-                    {speaker.college}
-                  </p>
-                  {speaker.location && (
-                    <p className="text-[12px] sm:text-[13px] text-slate-500 italic">
-                      {speaker.location}
-                    </p>
-                  )}
-                </div>
+                {rowIdx === 0 && (
+                  <div className="w-[2px] h-8 bg-black mx-auto mt-4 mb-4 hidden sm:block opacity-20" />
+                )}
               </div>
             ))}
           </motion.div>
