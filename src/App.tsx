@@ -10,6 +10,7 @@ import About from './components/About';
 import Timeline from './components/Timeline';
 import Committee from './components/Committee';
 import TechnicalCommittee from './components/TechnicalCommittee';
+import KeynoteSpeakers from './components/KeynoteSpeakers';
 import Fees from './components/Fees';
 import Partners from './components/Partners';
 import Footer from './components/Footer';
@@ -18,14 +19,21 @@ import RegistrationModal from './components/RegistrationModal';
 export default function App() {
   const [updateNotice, setUpdateNotice] = useState<string | null>(null);
   const [isTechnicalCommittee, setIsTechnicalCommittee] = useState(false);
+  const [isKeynote, setIsKeynote] = useState(false);
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
 
   const handleLinkClick = (name: string) => {
     if (name === 'TECHNICAL COMMITTEE') {
       setIsTechnicalCommittee(true);
+      setIsKeynote(false);
+      setUpdateNotice(null);
+    } else if (name === 'KEYNOTES & PLENARY') {
+      setIsTechnicalCommittee(false);
+      setIsKeynote(true);
       setUpdateNotice(null);
     } else if (name === 'ORGANIZING COMMITTEE') {
       setIsTechnicalCommittee(false);
+      setIsKeynote(false);
       setUpdateNotice(null);
       setTimeout(() => {
         const element = document.getElementById('committee');
@@ -35,9 +43,11 @@ export default function App() {
       }, 100);
     } else if (name === '') {
       setIsTechnicalCommittee(false);
+      setIsKeynote(false);
       setUpdateNotice(null);
     } else if (name) {
       setIsTechnicalCommittee(false);
+      setIsKeynote(false);
       setUpdateNotice(name);
     }
   };
@@ -52,6 +62,8 @@ export default function App() {
       
       {isTechnicalCommittee ? (
         <TechnicalCommittee />
+      ) : isKeynote ? (
+        <KeynoteSpeakers />
       ) : (
         <>
           {!updateNotice && (
