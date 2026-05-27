@@ -24,7 +24,7 @@ export default function Navbar({ onEmptyLinkClick, onRegisterClick }: { onEmptyL
       href: '#committee',
       subLinks: [
         { name: 'Organizing Committee', href: '#committee' },
-        { name: 'Technical Committee', href: '#technical-committee' }
+        { name: 'Conference Committee', href: '#technical-committee' }
       ]
     },
     { name: 'Keynotes', href: '#keynotes', isEmpty: true },
@@ -114,7 +114,7 @@ export default function Navbar({ onEmptyLinkClick, onRegisterClick }: { onEmptyL
                         onClick={(e) => {
                           e.preventDefault();
                           onEmptyLinkClick?.(sub.name.toUpperCase());
-                          if (sub.name === 'Technical Committee') {
+                          if (sub.name === 'Conference Committee') {
                             setTimeout(() => {
                               const el = document.getElementById('technical-committee-section');
                               if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -207,7 +207,7 @@ export default function Navbar({ onEmptyLinkClick, onRegisterClick }: { onEmptyL
                           e.preventDefault();
                           setIsMobileMenuOpen(false);
                           onEmptyLinkClick?.(sub.name.toUpperCase());
-                          if (sub.name === 'Technical Committee') {
+                          if (sub.name === 'Conference Committee') {
                             setTimeout(() => {
                               const el = document.getElementById('technical-committee-section');
                               if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });

@@ -22,7 +22,7 @@ export default function App() {
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
 
   const handleLinkClick = (name: string) => {
-    if (name === 'TECHNICAL COMMITTEE') {
+    if (name === 'CONFERENCE COMMITTEE') {
       setIsTechnicalCommittee(true);
       setUpdateNotice(null);
     } else if (name === 'KEYNOTES & PLENARY') {

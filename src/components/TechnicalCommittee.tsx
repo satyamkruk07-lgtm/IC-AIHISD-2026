@@ -4,7 +4,7 @@ import { UserCircle } from 'lucide-react';
 export default function TechnicalCommittee() {
   const sections = [
     {
-      title: "Technical Commitee",
+      title: "Technical Committee",
       members: [
         { name: "Mr. Kushpreet Singh", image: "/kushpreet.jpeg" },
         { name: "Mr. Kumar Rethik", image: "/rethik.jpeg" },
@@ -14,7 +14,7 @@ export default function TechnicalCommittee() {
       ]
     },
     {
-      title: "Registration",
+      title: "Registration Committee",
       members: [
         { name: "Ms. Aakanksha Pundir", image: "/akansha.jpeg" },
         { name: "Ms. Swati Kashyap", image: "/swati.jpeg" },
@@ -22,7 +22,7 @@ export default function TechnicalCommittee() {
       ]
     },
     {
-      title: "Reviewers",
+      title: "Reviewers Committee",
       members: [
         { name: "Dr. Surmadhur pant", image: "https://shivalikcollege.edu.in/wp-content/uploads/2025/05/PANT-SIR.png" },
         { name: "Dr. UC Gupta" },
@@ -39,7 +39,7 @@ export default function TechnicalCommittee() {
       ]
     },
     {
-      title: "Track Session",
+      title: "Session Committee",
       members: [
         { name: "Mr. Brijesh Kumar" },
         { name: "Mr. Raj Kumar Verma" },
@@ -50,7 +50,7 @@ export default function TechnicalCommittee() {
       ]
     },
     {
-      title: "Student Convener",
+      title: "Students Committee",
       members: [
         { name: "Rifat Pravez", role: "Chairperson (ACM)", image: "/rifat.jpeg" },
         { name: "Shivam Kumar", role: "Vice Chairperson (ACM)", image: "/shivam.jpeg" },
@@ -65,7 +65,12 @@ export default function TechnicalCommittee() {
         { name: "Prachi Rawat", role: "ACM Member", image: "/prachi.jpeg" },
         { name: "Srishti Raj", role: "ACM Member", image: "/srishti.jpeg" }
       ]
-    }
+    },
+    { title: "IT Support Committee", members: [] },
+    { title: "Publicity and Media Committee", members: [] },
+    { title: "Hospitality and Accommodation Committee", members: [] },
+    { title: "Certificate and Documentation Committee", members: [] },
+    { title: "Transport and Logistics Committee", members: [] }
   ];
 
   return (
