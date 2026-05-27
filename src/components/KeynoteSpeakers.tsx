@@ -24,7 +24,7 @@ export default function KeynoteSpeakers() {
     {
       name: "Dr. Ashok Kumar",
       role: "CEO architect consultant",
-      college: "ex - outstanding scientist csir-cbri",
+      college: "Ex - Outstanding Scientist CSIR-CBRI",
       location: ""
     },
     {
