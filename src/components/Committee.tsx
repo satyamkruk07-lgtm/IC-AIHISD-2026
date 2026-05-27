@@ -76,7 +76,7 @@ export default function Committee() {
         },
         { 
           name: "ER. KULDEEP GODIYAL", 
-          role: "ASSOCIATE PROFESSOR, CBII",
+          role: "ASSOCIATE PROFESSOR",
           image: "/kuldeep.png"
         }
       ]
