@@ -52,7 +52,7 @@ export default function KeynoteSpeakers() {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12"
           >
             {speakers.map((speaker, idx) => (
-              <div key={idx} className="flex flex-col text-center group">
+              <div key={idx} className="bg-white p-6 sm:p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-slate-100 flex flex-col text-center group hover:-translate-y-2 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300">
                 <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-4 sm:mb-6 rounded-full overflow-hidden bg-slate-100 flex items-center justify-center border-4 border-white shadow-md ring-1 ring-slate-200">
                   {speaker.image ? (
                     <img 
