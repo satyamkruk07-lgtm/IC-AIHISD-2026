@@ -25,7 +25,7 @@ export default function TechnicalCommittee() {
       title: "Reviewers Committee",
       members: [
         { name: "Dr. Surmadhur pant", image: "https://shivalikcollege.edu.in/wp-content/uploads/2025/05/PANT-SIR.png" },
-        { name: "Dr. UC Gupta" },
+        { name: "Dr. UC Gupta", image: "/ucgupta.png" },
         { name: "Dr. Santosh Joshi", image: "https://shivalikcollege.edu.in/wp-content/uploads/2023/11/Santosh-JoshI.jpg" },
         { name: "Dr. Syatnam Mukhopadhya", image: "https://shivalikcollege.edu.in/wp-content/uploads/2022/11/Dr.-Sayantan.png" },
         { 
