@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Calendar, ChevronLeft, ChevronRight, Clock, MapPin } from 'lucide-react';
+import { Calendar, ChevronLeft, ChevronRight, Clock, MapPin, UserCircle } from 'lucide-react';
 
 export default function Hero({ updateNotice }: { updateNotice?: string | null }) {
   const calculateTimeLeft = () => {
@@ -283,6 +283,61 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
                       +91 94120 34458
                     </a>
                   </div>
+                </motion.div>
+              ) : updateNotice === 'KEYNOTES & PLENARY' ? (
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl mx-auto mt-8 px-4"
+                >
+                  {[
+                    {
+                      name: "DR Sudarshan Iyengar",
+                      role: "HEAD CSE",
+                      college: "Indian Institute of Technology",
+                      location: "Ropar, Punjab, India"
+                    },
+                    {
+                      name: "Dr. Rashmi saini",
+                      role: "Associate Professor (CSE)",
+                      college: "G. B. Pant Institute of Engineering and Technology,",
+                      location: "Pauri Garhwal, Uttarakhand"
+                    },
+                    {
+                      name: "Prof (Dr.) Rajeev Tiwari",
+                      role: "Dean, School of Artificial Intelligence & Head - Industry Partnerships, Engineering Programs",
+                      college: "Bennett University",
+                      location: "Noida, Uttarpradesh, India"
+                    },
+                    {
+                      name: "Dr. Ashok Kumar",
+                      role: "CEO architect consultant",
+                      college: "ex - outstanding scientist csir-cbri",
+                      location: ""
+                    }
+                  ].map((speaker, idx) => (
+                    <div key={idx} className="bg-white/95 backdrop-blur-xl p-8 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] border border-white flex flex-col items-center text-center group hover:-translate-y-2 transition-all duration-300">
+                      <div className="w-20 sm:w-24 h-20 sm:h-24 mx-auto mb-4 sm:mb-5 rounded-full overflow-hidden bg-slate-100 flex items-center justify-center border-4 border-white shadow-md ring-1 ring-slate-200">
+                        <UserCircle size={40} className="text-slate-300" />
+                      </div>
+                      <h4 className="text-[15px] sm:text-[17px] font-black text-[#003360] tracking-tight leading-tight uppercase font-sans mb-1 group-hover:text-[#C83E34] transition-colors">
+                        {speaker.name}
+                      </h4>
+                      <p className="text-[13px] sm:text-[14px] font-bold text-slate-800 uppercase tracking-wide">
+                        {speaker.role}
+                      </p>
+                      <div className="mt-2 space-y-0.5">
+                        <p className="text-[13px] sm:text-[14px] text-slate-600 font-medium">
+                          {speaker.college}
+                        </p>
+                        {speaker.location && (
+                          <p className="text-[12px] sm:text-[13px] text-slate-500 italic">
+                            {speaker.location}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  ))}
                 </motion.div>
               ) : (
                 <motion.p 
