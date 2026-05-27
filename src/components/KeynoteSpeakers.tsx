@@ -29,9 +29,9 @@ export default function KeynoteSpeakers() {
     },
     {
       name: "Prof. (Dr.) Rajesh Singh",
-      role: "",
-      college: "",
-      location: "",
+      role: "Director, Division of Research & Innovation",
+      college: "Uttaranchal University",
+      location: "Dehradun, INDIA",
       image: "/rajesh.jpeg"
     }
   ];
