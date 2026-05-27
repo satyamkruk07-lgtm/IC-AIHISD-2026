@@ -35,6 +35,10 @@ export default function KeynoteSpeakers() {
       image: "/rajesh.jpeg"
     }
   ];
+  const chunkedSpeakers = [];
+  for (let i = 0; i < speakers.length; i += 2) {
+    chunkedSpeakers.push(speakers.slice(i, i + 2));
+  }
 
   return (
     <section id="keynotes" className="section-padding bg-white overflow-hidden">
@@ -50,11 +54,13 @@ export default function KeynoteSpeakers() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            {[speakers.slice(0, 2), speakers.slice(2, 4)].map((rowSpeakers, rowIdx) => (
+            {chunkedSpeakers.map((rowSpeakers, rowIdx) => (
               <div key={rowIdx}>
                 <div className="relative flex justify-center">
-                  <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-black hidden sm:block -translate-x-1/2 z-0 opacity-20" />
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-4xl relative z-10">
+                  {rowSpeakers.length === 2 && (
+                    <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-black hidden sm:block -translate-x-1/2 z-0 opacity-20" />
+                  )}
+                  <div className={"grid gap-4 w-full max-w-4xl relative z-10 " + (rowSpeakers.length === 1 ? "grid-cols-1 justify-items-center" : "grid-cols-1 sm:grid-cols-2")}>
                     {rowSpeakers.map((speaker, idx) => (
                       <div key={idx} className="flex justify-center">
                         <div className="flex flex-col items-center text-center px-4 py-4 w-full sm:w-[300px] group">
@@ -94,7 +100,7 @@ export default function KeynoteSpeakers() {
                     ))}
                   </div>
                 </div>
-                {rowIdx === 0 && (
+                {rowIdx < chunkedSpeakers.length - 1 && (
                   <div className="w-[2px] h-8 bg-black mx-auto mt-4 mb-4 hidden sm:block opacity-20" />
                 )}
               </div>
