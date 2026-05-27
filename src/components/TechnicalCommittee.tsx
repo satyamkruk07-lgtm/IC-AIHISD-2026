@@ -6,19 +6,19 @@ export default function TechnicalCommittee() {
     {
       title: "Technical Commitee",
       members: [
-        { name: "Kushpreet Singh", image: "/kushpreet.jpeg" },
-        { name: "Kumar Rethik", image: "/rethik.jpeg" },
-        { name: "pradeep chahuhan", image: "/pradeep.jpeg" },
+        { name: "Mr. Kushpreet Singh", image: "/kushpreet.jpeg" },
+        { name: "Mr. Kumar Rethik", image: "/rethik.jpeg" },
+        { name: "Mr. Pradeep Chauhan", image: "/pradeep.jpeg" },
         { name: "Vipin Uniyal" },
-        { name: "Vinayak Kumar", image: "/vinayak.jpeg" }
+        { name: "Mr. Avi Vinayak", image: "/vinayak.jpeg" }
       ]
     },
     {
       title: "Registration",
       members: [
-        { name: "Aakanksha Pundir", image: "/akansha.jpeg" },
-        { name: "Swati Kashyap", image: "/swati.jpeg" },
-        { name: "vandana bansal", image: "/vandana.jpeg" }
+        { name: "Ms. Aakanksha Pundir", image: "/akansha.jpeg" },
+        { name: "Ms. Swati Kashyap", image: "/swati.jpeg" },
+        { name: "Ms. Vandana Bansla", image: "/vandana.jpeg" }
       ]
     },
     {
@@ -40,12 +40,12 @@ export default function TechnicalCommittee() {
     {
       title: "Track Session",
       members: [
-        { name: "Brijesh" },
-        { name: "Rajkumar" },
+        { name: "Mr. Brijesh Kumar" },
+        { name: "Mr. Raj Kumar Verma" },
         { name: "Mohit" },
         { name: "Abhishek", image: "/abhishek.jpeg" },
         { name: "Amaan", image: "/amaan.jpeg" },
-        { name: "Shivali" }
+        { name: "Ms. Shivali Pundir" }
       ]
     },
     {
@@ -60,7 +60,7 @@ export default function TechnicalCommittee() {
         { name: "Ishant", role: "C.R Head (ACM)", image: "/ishant.jpeg" },
         { name: "Himanshu Kumar", role: "Media Head (ACM)", image: "/himanshu.jpeg" },
         { name: "Priyanjali", role: "Media Vice Head (ACM)", image: "/priyanjali.jpeg" },
-        { name: "Shubham", role: "ACM Member", image: "/shubham.jpeg" },
+        { name: "Mr. Shubham Goyal", role: "ACM Member", image: "/shubham.jpeg" },
         { name: "Prachi Rawat", role: "ACM Member", image: "/prachi.jpeg" },
         { name: "Srishti Raj", role: "ACM Member", image: "/srishti.jpeg" }
       ]
