@@ -26,6 +26,13 @@ export default function KeynoteSpeakers() {
       role: "CEO architect consultant",
       college: "ex - outstanding scientist csir-cbri",
       location: ""
+    },
+    {
+      name: "Prof. (Dr.) Rajesh Singh",
+      role: "",
+      college: "",
+      location: "",
+      image: "/rajesh.jpeg"
     }
   ];
 
@@ -47,7 +54,15 @@ export default function KeynoteSpeakers() {
             {speakers.map((speaker, idx) => (
               <div key={idx} className="flex flex-col text-center group">
                 <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-4 sm:mb-6 rounded-full overflow-hidden bg-slate-100 flex items-center justify-center border-4 border-white shadow-md ring-1 ring-slate-200">
-                  <UserCircle size={60} className="text-slate-300" />
+                  {speaker.image ? (
+                    <img 
+                      src={speaker.image} 
+                      alt={speaker.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <UserCircle size={60} className="text-slate-300" />
+                  )}
                 </div>
                 <h4 className="text-[16px] sm:text-[18px] font-black text-slate-900 tracking-tight leading-tight uppercase font-sans">
                   {speaker.name}

@@ -9,7 +9,7 @@ export default function TechnicalCommittee() {
         { name: "Mr. Kushpreet Singh", image: "/kushpreet.jpeg" },
         { name: "Mr. Kumar Rethik", image: "/rethik.jpeg" },
         { name: "Mr. Pradeep Chauhan", image: "/pradeep.jpeg" },
-        { name: "Vipin Uniyal", image: "/vipin.jpeg" },
+        { name: "Mr. Vipin Uniyal", image: "/vipin.jpeg" },
         { name: "Mr. Avi Vinayak", image: "/vinayak.jpeg" }
       ]
     },
@@ -45,7 +45,7 @@ export default function TechnicalCommittee() {
         { name: "Mr. Raj Kumar Verma" },
         { name: "Mr. Mohit Singh Bisht" },
         { name: "Mr. Abhishek Kushwaha", image: "/abhishek.jpeg" },
-        { name: "Amaan", image: "/amaan.jpeg" },
+        { name: "Mr. Syed Amaan Hasan", image: "/amaan.jpeg" },
         { name: "Ms. Shivali Pundir" }
       ]
     },
