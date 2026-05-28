@@ -4,11 +4,11 @@ import { motion } from 'motion/react';
 import { CreditCard, CheckCircle, Info } from 'lucide-react';
 
 const feeData = [
-  { category: "Faculty members / PHD Scholars", amount: "10,000", currency: "INR" },
-  { category: "Industry Delegates", amount: "12,000", currency: "INR" },
-  { category: "UG/PG Scholars", amount: "8,000", currency: "INR" },
-  { category: "Foreign Authors (Outside India)", amount: "150", currency: "USD" },
-  { category: "Co-authors/Participants", amount: "2,500", currency: "INR" },
+  { category: "Faculty members PHD Scholars", earlyBird: "10,000/- INR", regular: "11,500/- INR" },
+  { category: "Industry Delegates", earlyBird: "12,000/- INR", regular: "13,500/- INR" },
+  { category: "UG/PG Scholars", earlyBird: "8,000/- INR", regular: "9500/- INR" },
+  { category: "Foreign Authors (Outside India)", earlyBird: "150 usd", regular: "165 USD" },
+  { category: "Co-authors Participants", earlyBird: "2500/- INR", regular: "4000/- INR" },
 ];
 
 export default function Fees() {
@@ -21,9 +21,10 @@ export default function Fees() {
         </div>
 
         <div className="bg-white border border-slate-200 rounded-[2rem] overflow-hidden shadow-sm max-w-5xl mx-auto border-t-[6px] border-t-med-blue">
-          <div className="hidden md:grid md:grid-cols-2 px-10 py-6 items-center">
-            <div className="text-lg font-bold text-slate-900">Participant Category</div>
-            <div className="text-right text-lg font-bold text-med-blue">Fee Amount</div>
+          <div className="hidden md:grid md:grid-cols-3 px-10 py-6 items-center">
+            <div className="text-lg font-bold text-slate-900">CATEGORY</div>
+            <div className="text-left text-lg font-bold text-med-blue">EARLY BIRD FEES</div>
+            <div className="text-left text-lg font-bold text-med-blue">REGULAR FEES</div>
           </div>
           
           <div className="divide-y divide-slate-100">
@@ -34,14 +35,19 @@ export default function Fees() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="grid md:grid-cols-2 px-10 py-8 items-center hover:bg-slate-50/50 transition-colors"
+                className="grid md:grid-cols-3 px-10 py-8 items-center hover:bg-slate-50/50 transition-colors border-b border-slate-100 last:border-0"
               >
-                <div className="mb-2 md:mb-0">
+                <div className="mb-2 md:mb-0 pr-4">
                   <h3 className="font-medium text-slate-700 text-xl">{fee.category}</h3>
                 </div>
-                <div className="text-right">
-                  <span className="text-2xl font-black text-slate-900">
-                    {fee.currency === 'INR' ? `${fee.amount}/- INR` : `${fee.amount} USD`}
+                <div className="mb-2 md:mb-0 text-left">
+                  <span className="text-xl font-black text-slate-900">
+                    {fee.earlyBird}
+                  </span>
+                </div>
+                <div className="text-left">
+                  <span className="text-xl font-black text-slate-900">
+                    {fee.regular}
                   </span>
                 </div>
               </motion.div>
