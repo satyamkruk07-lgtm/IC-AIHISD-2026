@@ -11,6 +11,7 @@ import Timeline from './components/Timeline';
 import Committee from './components/Committee';
 import TechnicalCommittee from './components/TechnicalCommittee';
 import KeynoteSpeakers from './components/KeynoteSpeakers';
+import TrackSession from './components/TrackSession';
 import Fees from './components/Fees';
 import Partners from './components/Partners';
 import Footer from './components/Footer';
@@ -75,6 +76,7 @@ export default function App() {
           {!updateNotice && (
             <>
               <About />
+              <TrackSession />
               <Timeline />
               <Committee />
               <Fees />
