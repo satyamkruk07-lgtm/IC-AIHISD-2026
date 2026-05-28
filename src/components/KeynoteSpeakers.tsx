@@ -99,9 +99,6 @@ export default function KeynoteSpeakers() {
                     ))}
                   </div>
                 </div>
-                {rowIdx < chunkedSpeakers.length - 1 && (
-                  <div className="w-[2px] h-8 bg-black mx-auto mt-4 mb-4 hidden sm:block opacity-20" />
-                )}
               </div>
             ))}
           </motion.div>
