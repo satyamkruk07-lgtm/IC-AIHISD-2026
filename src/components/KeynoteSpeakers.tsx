@@ -7,7 +7,8 @@ export default function KeynoteSpeakers() {
       name: "DR Sudarshan Iyengar",
       role: "HEAD CSE",
       college: "Indian Institute of Technology",
-      location: "Ropar, Punjab, India"
+      location: "Ropar, Punjab, India",
+      image: "https://iitrpr.irins.org/profile_images/105193.jpeg"
     },
     {
       name: "Dr. Rashmi saini",
