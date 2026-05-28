@@ -41,9 +41,9 @@ export default function TechnicalCommittee() {
     {
       title: "Session Committee",
       members: [
-        { name: "Mr. Brijesh Kumar" },
-        { name: "Mr. Raj Kumar Verma" },
-        { name: "Mr. Mohit Singh Bisht" },
+        { name: "Mr. Brijesh Kumar", image: "/brijesh.jpeg" },
+        { name: "Mr. Raj Kumar Verma", image: "/rajkumar.jpeg" },
+        { name: "Mr. Mohit Singh Bisht", image: "/mohit.jpeg" },
         { name: "Mr. Abhishek Kushwaha", image: "/abhishek.jpeg" },
         { name: "Mr. Syed Amaan Hasan", image: "/amaan.jpeg" },
         { name: "Ms. Shivali Pundir", image: "/shivali.jpeg" },

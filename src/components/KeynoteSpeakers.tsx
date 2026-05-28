@@ -19,13 +19,15 @@ export default function KeynoteSpeakers() {
       name: "Prof (Dr.) Rajeev Tiwari",
       role: "Dean, School of Artificial Intelligence & Head - Industry Partnerships, Engineering Programs",
       college: "Bennett University",
-      location: "Noida, Uttarpradesh, India"
+      location: "Noida, Uttarpradesh, India",
+      image: "/rajeev.jpeg"
     },
     {
       name: "Dr. Ashok Kumar",
       role: "CEO architect consultant",
       college: "Ex - Outstanding Scientist CSIR-CBRI",
-      location: ""
+      location: "",
+      image: "/ashok.jpeg"
     },
     {
       name: "Prof. (Dr.) Rajesh Singh",
@@ -36,8 +38,8 @@ export default function KeynoteSpeakers() {
     }
   ];
   const chunkedSpeakers = [];
-  for (let i = 0; i < speakers.length; i += 2) {
-    chunkedSpeakers.push(speakers.slice(i, i + 2));
+  for (let i = 0; i < speakers.length; i += 3) {
+    chunkedSpeakers.push(speakers.slice(i, i + 3));
   }
 
   return (
@@ -57,14 +59,11 @@ export default function KeynoteSpeakers() {
             {chunkedSpeakers.map((rowSpeakers, rowIdx) => (
               <div key={rowIdx}>
                 <div className="relative flex justify-center">
-                  {rowSpeakers.length === 2 && (
-                    <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-black hidden sm:block -translate-x-1/2 z-0 opacity-20" />
-                  )}
-                  <div className={"grid gap-4 w-full max-w-4xl relative z-10 " + (rowSpeakers.length === 1 ? "grid-cols-1 justify-items-center" : "grid-cols-1 sm:grid-cols-2")}>
+                  <div className={"grid gap-8 w-full max-w-6xl relative z-10 " + (rowSpeakers.length === 1 ? "grid-cols-1 justify-items-center" : rowSpeakers.length === 2 ? "grid-cols-1 sm:grid-cols-2 justify-items-center max-w-4xl" : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3")}>
                     {rowSpeakers.map((speaker, idx) => (
-                      <div key={idx} className="flex justify-center">
-                        <div className="flex flex-col items-center text-center px-4 py-4 w-full sm:w-[300px] group">
-                          <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-[#C83E34]/20 shadow-sm transition-transform hover:scale-105 flex items-center justify-center bg-slate-50">
+                      <div key={idx} className="flex justify-center w-full">
+                        <div className="flex flex-col items-center text-center px-2 py-4 w-full max-w-[320px] group">
+                          <div className="w-full aspect-[4/5] rounded-3xl overflow-hidden mb-5 border-4 border-[#2c9834] shadow-md transition-transform hover:scale-105 flex items-center justify-center bg-slate-50">
                             {speaker.image ? (
                               <img 
                                 src={speaker.image} 
@@ -72,7 +71,7 @@ export default function KeynoteSpeakers() {
                                 className="w-full h-full object-cover"
                               />
                             ) : (
-                              <UserCircle size={40} className="text-slate-300" />
+                              <UserCircle size={80} className="text-slate-300" />
                             )}
                           </div>
                           <h4 className="text-[15px] sm:text-[17px] font-black text-slate-900 tracking-tight leading-tight uppercase font-sans">
