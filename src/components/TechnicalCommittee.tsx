@@ -54,7 +54,7 @@ export default function TechnicalCommittee() {
     {
       title: "Students Committee",
       members: [
-        { name: "Rifat Pravez", role: "Chairperson (ACM)", image: "/rifat.jpeg" },
+        { name: "Rifat Parvez", role: "Chairperson (ACM)", image: "/rifat.jpeg" },
         { name: "Shivam Kumar", role: "Vice Chairperson (ACM)", image: "/shivam.jpeg" },
         { name: "Aman Bhardwaj", role: "Treasurer (ACM)", image: "/aman_b.jpeg" },
         { name: "Gaurav Kumar", role: "Secretary (ACM)", image: "/gaurav.jpeg" },
