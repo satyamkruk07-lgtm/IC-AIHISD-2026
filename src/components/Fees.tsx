@@ -7,7 +7,7 @@ const feeData = [
   { category: "Faculty members PHD Scholars", earlyBird: "10,000/- INR", regular: "11,500/- INR" },
   { category: "Industry Delegates", earlyBird: "12,000/- INR", regular: "13,500/- INR" },
   { category: "UG/PG Scholars", earlyBird: "8,000/- INR", regular: "9500/- INR" },
-  { category: "Foreign Authors (Outside India)", earlyBird: "150 usd", regular: "165 USD" },
+  { category: "Foreign Authors (Outside India)", earlyBird: "150 USD", regular: "165 USD" },
   { category: "Co-authors Participants", earlyBird: "2500/- INR", regular: "4000/- INR" },
 ];
 
