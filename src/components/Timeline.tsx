@@ -8,8 +8,8 @@ const timelineData = [
   { date: "25th July 2026", event: "Last date of Submission", type: "submission" },
   { date: "10th August 2026", event: "Acceptance Notification", type: "notification" },
   { date: "25th August 2026", event: "Registration & Fee Submission", type: "registration" },
-  { date: "10th September 2026", event: "Camera Ready Paper Submission", type: "submission" },
-  { date: "24th-25th September 2026", event: "Conference Dates", type: "event" },
+  { date: "10th November 2026", event: "Camera Ready Paper Submission", type: "submission" },
+  { date: "24th-25th November 2026", event: "Conference Dates", type: "event" },
 ];
 
 export default function Timeline() {
