@@ -27,11 +27,11 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
 
   const slides = [
     {
-      date: "Sept 24, 2026",
+      date: "Nov 24, 2026",
       title: "Main Conference Day 1"
     },
     {
-      date: "Sept 25, 2026",
+      date: "Nov 25, 2026",
       title: "Technical Sessions & Valedictory"
     }
   ];
