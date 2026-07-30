@@ -87,7 +87,7 @@ export default function TechnicalCommittee() {
       members: [
         { name: "Dr. Vijay Kumar", image: "/vijay_kumar.jpeg" },
         { name: "Dr. Abhishek Kumar Jha", image: "/abhishek_jha.jpeg" },
-        { name: "Sachin Penuly", image: "/sachin_penuly.jpeg" }
+        { name: "Sachin Painuli", image: "/sachin_penuly.jpeg" }
       ] 
     },
     { 
@@ -96,7 +96,12 @@ export default function TechnicalCommittee() {
         { name: "Manish Gaur", image: "/manish_gaur.jpeg" }
       ] 
     },
-    { title: "Transport and Logistics Committee", members: [] }
+    { 
+      title: "Transport and Logistics Committee", 
+      members: [
+        { name: "Aman tejyan", image: "/aman_tejyan.jpeg" }
+      ] 
+    }
   ];
 
   return (
