@@ -33,7 +33,10 @@ export default function Footer() {
               </li>
               <li className="flex gap-3 text-blue-400">
                 <Mail size={18} className="shrink-0" />
-                <a href="mailto:contact@icaihisd.edu" className="hover:underline">contact@icaihisd.edu</a>
+                <div className="flex flex-col gap-1">
+                  <a href="mailto:kshitij.jain@shivalikcollege.edu.in" className="hover:underline">kshitij.jain@shivalikcollege.edu.in</a>
+                  <a href="mailto:dean.research@sce.org.in" className="hover:underline">dean.research@sce.org.in</a>
+                </div>
               </li>
             </ul>
           </div>

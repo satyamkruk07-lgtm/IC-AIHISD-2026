@@ -38,7 +38,8 @@ export default function TechnicalCommittee() {
         { name: "Dr. Mridula Singh" },
         { name: "Er. Vivek Aggarwal" },
         { name: "Dr. Shail Dinkar" },
-        { name: "Dr. Brij Mohan Singh" }
+        { name: "Dr. Brij Mohan Singh" },
+        { name: "Dr. Sono Bharadwaj" }
       ]
     },
     {
@@ -89,7 +90,12 @@ export default function TechnicalCommittee() {
         { name: "Sachin Penuly" }
       ] 
     },
-    { title: "Certificate and Documentation Committee", members: [] },
+    { 
+      title: "Certificate and Documentation Committee", 
+      members: [
+        { name: "Manish Gaur" }
+      ] 
+    },
     { title: "Transport and Logistics Committee", members: [] }
   ];
 
