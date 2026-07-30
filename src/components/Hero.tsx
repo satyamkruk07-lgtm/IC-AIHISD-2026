@@ -113,7 +113,7 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
             transition={{ delay: 0.1 }}
             className="text-lg md:text-xl font-medium max-w-2xl text-white/90 mb-4 tracking-tight uppercase"
           >
-            1st INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE IN HEALTHCARE AND INTELLIGENT SYSTEM DEVELOPMENT 2026
+            1<span className="lowercase">st</span> INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE IN HEALTHCARE AND INTELLIGENT SYSTEM DEVELOPMENT 2026
           </motion.p>
           
           <motion.p 
