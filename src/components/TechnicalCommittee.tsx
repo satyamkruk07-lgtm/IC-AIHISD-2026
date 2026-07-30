@@ -55,23 +55,7 @@ export default function TechnicalCommittee() {
         { name: "Mr. Mohammad Sayeed", image: "/mohammad.png" }
       ]
     },
-    {
-      title: "Students Committee",
-      members: [
-        { name: "Rifat Parvez", role: "Chairperson (ACM)", image: "/rifat.jpeg" },
-        { name: "Shivam Kumar", role: "Vice Chairperson (ACM)", image: "/shivam.jpeg" },
-        { name: "Aman Bhardwaj", role: "Treasurer (ACM)", image: "/aman_b.jpeg" },
-        { name: "Gaurav Kumar", role: "Secretary (ACM)", image: "/gaurav.jpeg" },
-        { name: "Kumar Satyam", role: "Graphic Head (ACM)", image: "/kumar_satyam.png" },
-        { name: "Prashant Sekhar", role: "C.A Lead (ACM)", image: "/prashant.jpeg" },
-        { name: "Ishant", role: "C.R Head (ACM)", image: "/ishant.jpeg" },
-        { name: "Himanshu Kumar", role: "Media Head (ACM)", image: "/himanshu.jpeg" },
-        { name: "Priyanjali", role: "Media Vice Head (ACM)", image: "/priyanjali.jpeg" },
-        { name: "Shubham Shah", role: "ACM Member", image: "/shubham.jpeg" },
-        { name: "Prachi Rawat", role: "ACM Member", image: "/prachi.jpeg" },
-        { name: "Srishti Raj", role: "ACM Member", image: "/srishti.jpeg" }
-      ]
-    },
+
     { 
       title: "IT Support Committee", 
       members: [
@@ -102,6 +86,23 @@ export default function TechnicalCommittee() {
         { name: "Aman tejyan", image: "/aman_tejyan.jpeg" },
         { name: "Devdutt Sharma", image: "/devdutt_sharma.jpeg" }
       ] 
+    },
+    {
+      title: "Students Committee",
+      members: [
+        { name: "Rifat Parvez", role: "Chairperson (ACM)", image: "/rifat.jpeg" },
+        { name: "Shivam Kumar", role: "Vice Chairperson (ACM)", image: "/shivam.jpeg" },
+        { name: "Aman Bhardwaj", role: "Treasurer (ACM)", image: "/aman_b.jpeg" },
+        { name: "Gaurav Kumar", role: "Secretary (ACM)", image: "/gaurav.jpeg" },
+        { name: "Kumar Satyam", role: "Graphic Head (ACM)", image: "/kumar_satyam.png" },
+        { name: "Prashant Sekhar", role: "C.A Lead (ACM)", image: "/prashant.jpeg" },
+        { name: "Ishant", role: "C.R Head (ACM)", image: "/ishant.jpeg" },
+        { name: "Himanshu Kumar", role: "Media Head (ACM)", image: "/himanshu.jpeg" },
+        { name: "Priyanjali", role: "Media Vice Head (ACM)", image: "/priyanjali.jpeg" },
+        { name: "Shubham Shah", role: "ACM Member", image: "/shubham.jpeg" },
+        { name: "Prachi Rawat", role: "ACM Member", image: "/prachi.jpeg" },
+        { name: "Srishti Raj", role: "ACM Member", image: "/srishti.jpeg" }
+      ]
     }
   ];
 

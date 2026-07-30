@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
-          <p>© {new Date().getFullYear()} IC-AIHISD 2026. Organized by Department of CSE, SGOC.</p>
+          <p>© {new Date().getFullYear()} IC-AIHISD 2026. Organized by Department of CSE in collaboration with School of Pharmacy, Shivalik College of Engineering.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Use</a>
