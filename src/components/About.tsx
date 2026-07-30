@@ -62,8 +62,8 @@ export default function About() {
               <GraduationCap size={16} />
               <span>Organized By</span>
             </div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-6">
-              Shivalik College of Engineering
+            <h3 className="text-2xl font-bold text-slate-900 mb-6 leading-snug">
+              Department of CSE in collaboration with School of Pharmacy, Shivalik College of Engineering
             </h3>
             <p className="text-slate-600 mb-6 leading-relaxed">
               Established in 2008, Shivalik College of Engineering (SCE) Dehradun is a leading institution dedicated to academic excellence. As a UGC Autonomous institute, it has consistently nurtured scientific talent across engineering disciplines.
