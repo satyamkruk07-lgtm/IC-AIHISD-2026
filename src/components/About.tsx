@@ -23,7 +23,7 @@ export default function About() {
             </h2>
             <div className="space-y-6 text-slate-600 leading-relaxed">
               <p>
-                The International Conference on Artificial Intelligence in Healthcare and Intelligent System Development 2026 (IC-AIHISD 2026) is a premier platform for global researchers to share cutting-edge findings.
+                1st International Conference on Artificial Intelligence in Healthcare and Intelligent System Development 2026 (IC-AIHISD 2026) is a premier platform for global researchers to share cutting-edge findings.
               </p>
               <p>
                 Our mission is to bridge the gap between advanced algorithmic precision and medical wisdom. By highlighting the latest frontiers in Science, Engineering, and Technology, we aim to foster an environment where intelligent systems solve real-world healthcare challenges.
