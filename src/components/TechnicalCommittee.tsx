@@ -24,18 +24,21 @@ export default function TechnicalCommittee() {
     {
       title: "Reviewers Committee",
       members: [
-        { name: "Dr. Surmadhur pant", image: "https://shivalikcollege.edu.in/wp-content/uploads/2025/05/PANT-SIR.png" },
-        { name: "Dr. UC Gupta", image: "/ucgupta.png" },
+        { name: "Dr. Surmadhur Pant", image: "https://shivalikcollege.edu.in/wp-content/uploads/2025/05/PANT-SIR.png" },
+        { name: "Dr. U. C. Gupta", image: "/ucgupta.png" },
         { name: "Dr. Santosh Joshi", image: "https://shivalikcollege.edu.in/wp-content/uploads/2023/11/Santosh-JoshI.jpg" },
         { name: "Dr. Syatnam Mukhopadhya", image: "https://shivalikcollege.edu.in/wp-content/uploads/2022/11/Dr.-Sayantan.png" },
-        { 
-          name: "Dr. Dev Baloni",
-          image: "/dev_baloni.jpeg"
-        },
-        { name: "Dr. Vijaylakshmi Sajwan", image: "/vijaylakshmi.jpeg" },
+        { name: "Dr. Dev Baloni", image: "/dev_baloni.jpeg" },
+        { name: "Dr Vijaylakshmi Sajwan", image: "/vijaylakshmi.jpeg" },
         { name: "Mr. Sartaj Khan", image: "/sartaj.jpeg" },
         { name: "Dr. Paramendra Kumar", image: "/paramendra.jpeg" },
-        { name: "Dr. Saba Sabir", image: "/saba.jpeg" }
+        { name: "Mrs. Shaista Hasan" },
+        { name: "Dr. Ritu Sanwal" },
+        { name: "Naga Hemanth Badabagni" },
+        { name: "Dr, Mridula Singh" },
+        { name: "Er. Vivek Aggarwal" },
+        { name: "Dr. Shail Dinkar" },
+        { name: "Dr. Brij Mohan Singh" }
       ]
     },
     {
