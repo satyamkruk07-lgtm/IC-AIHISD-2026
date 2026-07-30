@@ -6,7 +6,7 @@ import { Calendar, ChevronLeft, ChevronRight, Clock, MapPin, UserCircle } from '
 
 export default function Hero({ updateNotice }: { updateNotice?: string | null }) {
   const calculateTimeLeft = () => {
-    const targetDate = new Date('2026-09-24T00:00:00').getTime();
+    const targetDate = new Date('2026-11-27T00:00:00').getTime();
     const now = new Date().getTime();
     const difference = targetDate - now;
 
@@ -27,11 +27,11 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
 
   const slides = [
     {
-      date: "Nov 24, 2026",
+      date: "Nov 27, 2026",
       title: "Main Conference Day 1"
     },
     {
-      date: "Nov 25, 2026",
+      date: "Nov 28, 2026",
       title: "Technical Sessions & Valedictory"
     }
   ];
@@ -131,7 +131,7 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
             transition={{ delay: 0.3 }}
             className="text-2xl md:text-3xl font-display font-bold mb-12 text-shadow"
           >
-            Conference Dates: November 24-25, 2026
+            Conference Dates: November 27-28, 2026
           </motion.h2>
 
           {/* Cards Section */}
@@ -195,7 +195,7 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
               <div className="space-y-4">
                 <div className="flex justify-between items-center group cursor-pointer">
                   <div className="flex flex-col">
-                    <span className="text-sm font-bold text-white/50 uppercase tracking-widest leading-none mb-1">November 24, 2026</span>
+                    <span className="text-sm font-bold text-white/50 uppercase tracking-widest leading-none mb-1">November 27, 2026</span>
                     <span className="text-lg font-bold group-hover:text-med-light-blue transition-colors">Inauguration & Keynote Sessions</span>
                   </div>
                   <ChevronRight size={16} className="opacity-40 group-hover:opacity-100 transition-all" />
@@ -203,7 +203,7 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
                 <div className="h-px bg-white/10 w-full" />
                 <div className="flex justify-between items-center group cursor-pointer">
                   <div className="flex flex-col">
-                    <span className="text-sm font-bold text-white/50 uppercase tracking-widest leading-none mb-1">November 25, 2026</span>
+                    <span className="text-sm font-bold text-white/50 uppercase tracking-widest leading-none mb-1">November 28, 2026</span>
                     <span className="text-lg font-bold group-hover:text-med-light-blue transition-colors">Technical Sessions & Valedictory</span>
                   </div>
                   <ChevronRight size={16} className="opacity-40 group-hover:opacity-100 transition-all" />
