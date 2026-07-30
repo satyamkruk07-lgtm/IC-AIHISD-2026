@@ -87,7 +87,7 @@ export default function TechnicalCommittee() {
       members: [
         { name: "Dr. Vijay Kumar", image: "/vijay_kumar.jpeg" },
         { name: "Dr. Abhishek Kumar Jha", image: "/abhishek_jha.jpeg" },
-        { name: "Sachin Penuly" }
+        { name: "Sachin Penuly", image: "/sachin_penuly.jpeg" }
       ] 
     },
     { 
