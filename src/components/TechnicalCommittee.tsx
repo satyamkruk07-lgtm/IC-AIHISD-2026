@@ -35,7 +35,7 @@ export default function TechnicalCommittee() {
         { name: "Mrs. Shaista Hasan" },
         { name: "Dr. Ritu Sanwal" },
         { name: "Naga Hemanth Badabagni" },
-        { name: "Dr, Mridula Singh" },
+        { name: "Dr. Mridula Singh" },
         { name: "Er. Vivek Aggarwal" },
         { name: "Dr. Shail Dinkar" },
         { name: "Dr. Brij Mohan Singh" }
@@ -61,7 +61,7 @@ export default function TechnicalCommittee() {
         { name: "Shivam Kumar", role: "Vice Chairperson (ACM)", image: "/shivam.jpeg" },
         { name: "Aman Bhardwaj", role: "Treasurer (ACM)", image: "/aman_b.jpeg" },
         { name: "Gaurav Kumar", role: "Secretary (ACM)", image: "/gaurav.jpeg" },
-        { name: "Kumar Satyam", role: "Graphic Head (ACM)", image: "/kumar_satyam.jpeg" },
+        { name: "Kumar Satyam", role: "Graphic Head (ACM)", image: "/kumar_satyam.png" },
         { name: "Prashant Sekhar", role: "C.A Lead (ACM)", image: "/prashant.jpeg" },
         { name: "Ishant", role: "C.R Head (ACM)", image: "/ishant.jpeg" },
         { name: "Himanshu Kumar", role: "Media Head (ACM)", image: "/himanshu.jpeg" },
