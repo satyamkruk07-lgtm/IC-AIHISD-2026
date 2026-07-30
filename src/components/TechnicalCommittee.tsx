@@ -99,7 +99,8 @@ export default function TechnicalCommittee() {
     { 
       title: "Transport and Logistics Committee", 
       members: [
-        { name: "Aman tejyan", image: "/aman_tejyan.jpeg" }
+        { name: "Aman tejyan", image: "/aman_tejyan.jpeg" },
+        { name: "Devdutt Sharma", image: "/devdutt_sharma.jpeg" }
       ] 
     }
   ];
