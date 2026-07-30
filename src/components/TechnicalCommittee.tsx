@@ -75,25 +75,25 @@ export default function TechnicalCommittee() {
     { 
       title: "IT Support Committee", 
       members: [
-        { name: "Manish Bhatt" },
-        { name: "Jitender Rawat" },
-        { name: "Sanjay Chaudhary" },
-        { name: "Amit Negi" }
+        { name: "Manish Bhatt", image: "/manish_bhatt.jpeg" },
+        { name: "Jitender Rawat", image: "/jitender_rawat.jpeg" },
+        { name: "Sanjay Chaudhary", image: "/sanjay_chaudhary.jpeg" },
+        { name: "Amit Negi", image: "/amit_negi.jpeg" }
       ] 
     },
     { title: "Publicity and Media Committee", members: [] },
     { 
       title: "Hospitality and Accommodation Committee", 
       members: [
-        { name: "Dr. Vijay Kumar" },
-        { name: "Dr. Abhishek Kumar Jha" },
+        { name: "Dr. Vijay Kumar", image: "/vijay_kumar.jpeg" },
+        { name: "Dr. Abhishek Kumar Jha", image: "/abhishek_jha.jpeg" },
         { name: "Sachin Penuly" }
       ] 
     },
     { 
       title: "Certificate and Documentation Committee", 
       members: [
-        { name: "Manish Gaur" }
+        { name: "Manish Gaur", image: "/manish_gaur.jpeg" }
       ] 
     },
     { title: "Transport and Logistics Committee", members: [] }
