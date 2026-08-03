@@ -10,7 +10,8 @@ export default function TechnicalCommittee() {
         { name: "Mr. Kumar Rethik", image: "/rethik.jpeg" },
         { name: "Mr. Pradeep Chauhan", image: "/pradeep.jpeg" },
         { name: "Mr. Vipin Uniyal", image: "/vipin.jpeg" },
-        { name: "Mr. Avi Vinayak", image: "/vinayak.jpeg" }
+        { name: "Mr. Avi Vinayak", image: "/vinayak.jpeg" },
+        { name: "Sudhir gautam", image: "/sudhir_gautam.jpeg" }
       ]
     },
     {
