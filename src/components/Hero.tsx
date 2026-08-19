@@ -80,7 +80,7 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
             className="flex items-center justify-center gap-8 sm:gap-12 mb-8 flex-wrap"
           >
             <img 
-              src="https://shivalikcollege.edu.in/apply-now/assets/images/new-logo/university-logo.webp" 
+              src="/university_logo.png" 
               alt="Shivalik College Logo" 
               className="h-10 sm:h-20 w-auto object-contain rounded-xl" 
               referrerPolicy="no-referrer"
