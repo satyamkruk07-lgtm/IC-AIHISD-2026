@@ -93,6 +93,11 @@ export default function Committee() {
           name: "ER. ASHISH KUMAR GUPTA", 
           role: "ASSISTANT PROFESSOR",
           image: "https://cbii.shivalikcollege.edu.in/assets/ashishguptasir-APdZX32S.jpg"
+        },
+        { 
+          name: "DR. AMIT SEMWAL", 
+          role: "HOD COLLEGE OF PHARMACY",
+          image: "https://copshivalik.edu.in/wp-content/uploads/2025/10/hod-pharma.png"
         }
       ]
     }
