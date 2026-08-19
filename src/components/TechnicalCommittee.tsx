@@ -41,7 +41,9 @@ export default function TechnicalCommittee() {
         { name: "Er. Vivek Aggarwal" },
         { name: "Dr. Shail Dinkar" },
         { name: "Dr. Brij Mohan Singh" },
-        { name: "Dr. Sono Bharadwaj" }
+        { name: "Dr. Sono Bharadwaj" },
+        { name: "Mrs. Kiran Dobhal" },
+        { name: "Mr. Ishu Garg" }
       ]
     },
     {
