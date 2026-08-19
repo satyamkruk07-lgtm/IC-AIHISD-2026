@@ -20,9 +20,9 @@ export default function Committee() {
           image: "https://shivalikcollege.edu.in/wp-content/uploads/2022/11/chairman_img.png"
         },
         { 
-          name: "MR. AJAY KUMAR", 
+          name: "PROF. (DR.) SANJEEV KUMAR BHALLA", 
           role: "VICE CHAIRMAN",
-          image: "https://shivalikcollege.edu.in/wp-content/uploads/2022/11/ViceChairman_ShivalikCollege.jpg"
+          image: "https://drsanjeevbhalla.com/images/profile.jpg"
         }
       ]
     },
