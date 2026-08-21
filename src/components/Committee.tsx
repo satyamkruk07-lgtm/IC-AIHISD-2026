@@ -20,9 +20,9 @@ export default function Committee() {
           image: "https://shivalikcollege.edu.in/wp-content/uploads/2022/11/chairman_img.png"
         },
         { 
-          name: "PROF. (DR.) SANJEEV KUMAR BHALLA", 
+          name: "MR. AJAY KUMAR", 
           role: "VICE CHAIRMAN",
-          image: "https://drsanjeevbhalla.com/images/profile.jpg"
+          image: "https://shivalikcollege.edu.in/wp-content/uploads/2022/11/ViceChairman_ShivalikCollege.jpg"
         }
       ]
     },
@@ -30,9 +30,9 @@ export default function Committee() {
       title: "Patron",
       members: [
         { 
-          name: "DR. T.S. SIDHU", 
-          role: "DIRECTOR",
-          image: "https://shivalikcollege.edu.in/wp-content/uploads/2026/02/dirctor-image-scaled.jpeg"
+          name: "PROF. (DR.) SANJEEV KUMAR BHALLA", 
+          role: "VICE CHANCELLOR",
+          image: "https://drsanjeevbhalla.com/images/profile.jpg"
         }
       ]
     },
