@@ -92,7 +92,7 @@ export default function Committee() {
         { 
           name: "DR. AMIT SEMWAL", 
           role: "HOD COLLEGE OF PHARMACY",
-          image: "https://copshivalik.edu.in/wp-content/uploads/2025/10/hod-pharma.png"
+          image: "/amit_semwal.webp"
         }
       ]
     }
