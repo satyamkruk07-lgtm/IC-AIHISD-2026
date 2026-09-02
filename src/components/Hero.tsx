@@ -86,7 +86,7 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
               referrerPolicy="no-referrer"
             />
             <img 
-              src="https://cdn.imageurlgenerator.com/uploads/2626c5ce-8a03-442b-912c-c622f59c4e3c.jpeg" 
+              src="/partner2_logo.jpeg" 
               alt="Partner Logo 2" 
               className="h-14 sm:h-20 w-auto object-contain rounded-lg" 
               referrerPolicy="no-referrer"
