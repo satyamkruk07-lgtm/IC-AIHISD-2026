@@ -63,10 +63,10 @@ export default function About() {
               <span>Organized By</span>
             </div>
             <h3 className="text-2xl font-bold text-slate-900 mb-6 leading-snug">
-              Department of CSE in collaboration with School of Pharmacy, Shivalik College of Engineering
+              Department of CSE in collaboration with School of Pharmacy, Shivalik University
             </h3>
             <p className="text-slate-600 mb-6 leading-relaxed">
-              Established in 2008, Shivalik College Dehradun is a leading institution dedicated to academic excellence. As a UGC Autonomous institute, it has consistently nurtured scientific talent across engineering disciplines.
+              Established in 2008, Shivalik University Dehradun is a leading institution dedicated to academic excellence. As a UGC Autonomous institute, it has consistently nurtured scientific talent across engineering disciplines.
             </p>
             <p className="text-slate-600 mb-8 leading-relaxed">
               The Department of Computer Science and Engineering is at the forefront of this initiative, organizing IC-AIHISD 2026 to foster international collaboration and technological growth.

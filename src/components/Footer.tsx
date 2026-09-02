@@ -22,7 +22,7 @@ export default function Footer() {
             <ul className="space-y-4 text-slate-400 text-sm">
               <li className="flex gap-3">
                 <MapPin size={18} className="shrink-0 text-blue-400" />
-                <span>Shivalik College of Engineering, Shimla Bypass Rd, Dehradun, Uttarakhand, 248197.</span>
+                <span>Shivalik University, Shimla Bypass Rd, Dehradun, Uttarakhand, 248197.</span>
               </li>
               <li className="flex gap-3">
                 <Phone size={18} className="shrink-0 text-blue-400" />
@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
-          <p>© {new Date().getFullYear()} IC-AIHISD 2026. Organized by Department of CSE in collaboration with School of Pharmacy, Shivalik College of Engineering.</p>
+          <p>© {new Date().getFullYear()} IC-AIHISD 2026. Organized by Department of CSE in collaboration with School of Pharmacy, Shivalik University.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Use</a>

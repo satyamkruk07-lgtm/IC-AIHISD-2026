@@ -6,7 +6,7 @@ import { cn } from '../lib/utils';
 
 export default function Committee() {
   const commonInfo = {
-    college: "Shivalik College of engineering",
+    college: "Shivalik University",
     location: "Dehradun, Uttarakhand, India"
   };
 

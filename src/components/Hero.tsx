@@ -64,7 +64,7 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
       <div className="absolute inset-0 z-0">
         <img 
           src="/shivalik_college.jpg" 
-          alt="Shivalik College Dehradun" 
+          alt="Shivalik University Dehradun" 
           className="w-full h-full object-cover brightness-[0.35]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-transparent to-slate-900/90" />
@@ -81,7 +81,7 @@ export default function Hero({ updateNotice }: { updateNotice?: string | null })
           >
             <img 
               src="/university_logo.png" 
-              alt="Shivalik College Logo" 
+              alt="Shivalik University Logo" 
               className="h-10 sm:h-20 w-auto object-contain rounded-xl" 
               referrerPolicy="no-referrer"
             />
