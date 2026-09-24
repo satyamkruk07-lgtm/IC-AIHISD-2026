@@ -11,6 +11,7 @@ import Timeline from './components/Timeline';
 import Committee from './components/Committee';
 import TechnicalCommittee from './components/TechnicalCommittee';
 import KeynoteSpeakers from './components/KeynoteSpeakers';
+import SessionChair from './components/SessionChair';
 import TrackSession from './components/TrackSession';
 import Fees from './components/Fees';
 import Partners from './components/Partners';
@@ -21,16 +22,19 @@ export default function App() {
   const [updateNotice, setUpdateNotice] = useState<string | null>(null);
   const [isTechnicalCommittee, setIsTechnicalCommittee] = useState(false);
   const [isKeynote, setIsKeynote] = useState(false);
+  const [isSessionChair, setIsSessionChair] = useState(false);
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
 
   const handleLinkClick = (name: string) => {
     if (name === 'CONFERENCE COMMITTEE') {
       setIsTechnicalCommittee(true);
       setIsKeynote(false);
+      setIsSessionChair(false);
       setUpdateNotice(null);
     } else if (name === 'KEYNOTES & PLENARY') {
       setIsTechnicalCommittee(false);
       setIsKeynote(true);
+      setIsSessionChair(false);
       setUpdateNotice(null);
       setTimeout(() => {
         const element = document.getElementById('keynotes');
@@ -38,9 +42,21 @@ export default function App() {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }, 100);
+    } else if (name === 'SESSION CHAIR') {
+      setIsTechnicalCommittee(false);
+      setIsKeynote(false);
+      setIsSessionChair(true);
+      setUpdateNotice(null);
+      setTimeout(() => {
+        const element = document.getElementById('session-chair');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
     } else if (name === 'ORGANIZING COMMITTEE') {
       setIsTechnicalCommittee(false);
       setIsKeynote(false);
+      setIsSessionChair(false);
       setUpdateNotice(null);
       setTimeout(() => {
         const element = document.getElementById('committee');
@@ -51,10 +67,12 @@ export default function App() {
     } else if (name === '') {
       setIsTechnicalCommittee(false);
       setIsKeynote(false);
+      setIsSessionChair(false);
       setUpdateNotice(null);
     } else if (name) {
       setIsTechnicalCommittee(false);
       setIsKeynote(false);
+      setIsSessionChair(false);
       setUpdateNotice(name);
     }
   };
@@ -71,6 +89,8 @@ export default function App() {
         <TechnicalCommittee />
       ) : isKeynote ? (
         <KeynoteSpeakers />
+      ) : isSessionChair ? (
+        <SessionChair />
       ) : (
         <>
           {!updateNotice && (

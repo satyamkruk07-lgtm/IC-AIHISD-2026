@@ -34,6 +34,7 @@ export default function TechnicalCommittee() {
         { name: "Dr Vijaylakshmi Sajwan", image: "/vijaylakshmi.jpeg" },
         { name: "Mr. Sartaj Khan", image: "/sartaj.jpeg" },
         { name: "Dr. Paramendra Kumar", image: "/paramendra.jpeg" },
+        { name: "Dilli Babu Devineni", image: "/dilli_babu_devineni.jpeg" },
         { name: "Mrs. Shaista Hasan" },
         { name: "Dr. Ritu Sanwal" },
         { name: "Naga Hemanth Badabagni" },
