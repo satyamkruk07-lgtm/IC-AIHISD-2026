@@ -5,9 +5,8 @@ export default function SessionChair() {
   const chairs = [
     {
       name: "DILLI BABU DEVINENI",
-      role: "Session Chair",
-      college: "",
-      location: "",
+      role: "Agentic Al Engineer & LLM Systems Researcher",
+      location: "Franklin, TN, USA",
       image: "/dilli_babu_devineni.jpeg"
     }
   ];
@@ -53,7 +52,7 @@ export default function SessionChair() {
                             {chair.name}
                           </h4>
                           {chair.role && (
-                            <p className="text-[13px] sm:text-[14px] font-bold text-slate-800 mt-1 uppercase tracking-wide">
+                            <p className="text-[13px] sm:text-[14px] font-bold text-slate-800 mt-1 tracking-wide">
                               {chair.role}
                             </p>
                           )}
