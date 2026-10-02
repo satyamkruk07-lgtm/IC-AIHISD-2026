@@ -70,7 +70,12 @@ export default function TechnicalCommittee() {
         { name: "Amit Negi", image: "/amit_negi.jpeg" }
       ] 
     },
-    { title: "Publicity and Media Committee", members: [] },
+    { 
+      title: "Publicity and Media Committee", 
+      members: [
+        { name: "Saurabh", image: "/saurabh.jpeg" }
+      ] 
+    },
     { 
       title: "Hospitality and Accommodation Committee", 
       members: [
