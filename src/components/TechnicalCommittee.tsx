@@ -44,7 +44,8 @@ export default function TechnicalCommittee() {
         { name: "Dr. Brij Mohan Singh" },
         { name: "Dr. Sono Bharadwaj" },
         { name: "Mrs. Kiran Dobhal" },
-        { name: "Mr. Ishu Garg" }
+        { name: "Mr. Ishu Garg" },
+        { name: "Mr. Gaurav Bhandari" }
       ]
     },
     {
