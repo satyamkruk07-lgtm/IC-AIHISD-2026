@@ -74,7 +74,8 @@ export default function TechnicalCommittee() {
     { 
       title: "Publicity and Media Committee", 
       members: [
-        { name: "Saurabh", image: "/saurabh.jpeg" }
+        { name: "Saurabh", image: "/saurabh.jpeg" },
+        { name: "Tanuja" }
       ] 
     },
     { 
