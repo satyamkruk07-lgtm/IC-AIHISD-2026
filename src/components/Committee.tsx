@@ -21,7 +21,7 @@ export default function Committee() {
         },
         { 
           name: "MR. AJAY KUMAR", 
-          role: "PRESIDENT, SHIVALIK UNIVERSITY",
+          role: "PRESIDENT",
           image: "/ViceChairman_ShivalikCollege.jpg"
         }
       ]
