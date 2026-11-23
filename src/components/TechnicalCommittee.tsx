@@ -107,10 +107,7 @@ export default function TechnicalCommittee() {
         { name: "Aman Bhardwaj", role: "Treasurer (ACM)", image: "/aman_b.jpeg" },
         { name: "Gaurav Kumar", role: "Secretary (ACM)", image: "/gaurav.jpeg" },
         { name: "Kumar Satyam", role: "Graphic Head (ACM)", image: "/kumar_satyam.png" },
-        { name: "Prashant Sekhar", role: "C.A Lead (ACM)", image: "/prashant.jpeg" },
-        { name: "Ishant", role: "C.R Head (ACM)", image: "/ishant.jpeg" },
         { name: "Himanshu Kumar", role: "Media Head (ACM)", image: "/himanshu.jpeg" },
-        { name: "Priyanjali", role: "Media Vice Head (ACM)", image: "/priyanjali.jpeg" },
         { name: "Shubham Shah", role: "ACM Member", image: "/shubham.jpeg" },
         { name: "Prachi Rawat", role: "ACM Member", image: "/prachi.jpeg" },
         { name: "Srishti Raj", role: "ACM Member", image: "/srishti.jpeg" }
