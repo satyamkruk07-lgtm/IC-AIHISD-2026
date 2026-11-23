@@ -34,18 +34,7 @@ export default function TechnicalCommittee() {
         { name: "Dr Vijaylakshmi Sajwan", image: "/vijaylakshmi.jpeg" },
         { name: "Mr. Sartaj Khan", image: "/sartaj.jpeg" },
         { name: "Dr. Paramendra Kumar", image: "/paramendra.jpeg" },
-        { name: "Dilli Babu Devineni", image: "/dilli_babu_devineni.jpeg" },
-        { name: "Mrs. Shaista Hasan" },
-        { name: "Dr. Ritu Sanwal" },
-        { name: "Naga Hemanth Badabagni" },
-        { name: "Dr. Mridula Singh" },
-        { name: "Er. Vivek Aggarwal" },
-        { name: "Dr. Shail Dinkar" },
-        { name: "Dr. Brij Mohan Singh" },
-        { name: "Dr. Sono Bharadwaj" },
-        { name: "Mrs. Kiran Dobhal" },
-        { name: "Mr. Ishu Garg" },
-        { name: "Mr. Gaurav Bhandari" }
+        { name: "Dilli Babu Devineni", image: "/dilli_babu_devineni.jpeg" }
       ]
     },
     {
