@@ -13,7 +13,8 @@ export default function KeynoteSpeakers() {
     {
       name: "Mr. Saurabh Aggarwal",
       role: "Global Operations and Business Transformation Leader",
-      location: "Noida, Uttar Pradesh, India"
+      location: "Noida, Uttar Pradesh, India",
+      image: "/saurabh_aggarwal.jpeg"
     },
     {
       name: "Prof (Dr.) Rajeev Tiwari",
