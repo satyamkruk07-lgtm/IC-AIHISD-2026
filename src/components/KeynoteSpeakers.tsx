@@ -11,10 +11,9 @@ export default function KeynoteSpeakers() {
       image: "/sudarshan_iyengar.jpeg"
     },
     {
-      name: "Dr. Rashmi saini",
-      role: "Associate Professor (CSE)",
-      college: "G. B. Pant Institute of Engineering and Technology,",
-      location: "Pauri Garhwal, Uttarakhand"
+      name: "Mr. Saurabh Aggarwal",
+      role: "Global Operations and Business Transformation Leader",
+      location: "Noida, Uttar Pradesh, India"
     },
     {
       name: "Prof (Dr.) Rajeev Tiwari",
