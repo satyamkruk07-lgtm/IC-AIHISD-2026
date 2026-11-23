@@ -18,7 +18,6 @@ export default function Navbar({ onEmptyLinkClick, onRegisterClick }: { onEmptyL
 
   const navLinks = [
     { name: 'Home', href: '#' },
-    { name: 'Authors', href: '#authors', isEmpty: true },
     { 
       name: 'Committee', 
       href: '#committee',
@@ -30,8 +29,6 @@ export default function Navbar({ onEmptyLinkClick, onRegisterClick }: { onEmptyL
     { name: 'Keynotes', href: '#keynotes', isEmpty: true },
     { name: 'Session Chair', href: '#session-chair', isEmpty: true },
     { name: 'Programme', href: '#programme', isEmpty: true },
-    { name: 'Exhibitors', href: '#exhibitors', isEmpty: true },
-    { name: 'Travel', href: '#travel', isEmpty: true },
     { name: 'Contact', href: '#contact', isEmpty: true },
   ];
 
@@ -40,10 +37,8 @@ export default function Navbar({ onEmptyLinkClick, onRegisterClick }: { onEmptyL
       e.preventDefault();
       const displayNames: { [key: string]: string } = {
         'Programme': 'TECHNICAL PROGRAMME',
-        'Authors': 'AUTHOR GUIDELINES',
         'Keynotes': 'KEYNOTES & PLENARY',
         'Session Chair': 'SESSION CHAIR',
-        'Travel': 'TRAVEL & ACCOMMODATION',
         'Contact': 'CONTACT INFORMATION'
       };
       onEmptyLinkClick(displayNames[link.name] || link.name);
