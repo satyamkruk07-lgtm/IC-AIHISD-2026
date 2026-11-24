@@ -64,7 +64,9 @@ export default function TechnicalCommittee() {
       title: "Publicity and Media Committee", 
       members: [
         { name: "Saurabh", image: "/saurabh.jpeg" },
-        { name: "Tanuja" }
+        { name: "Tanuja", image: "/tanuja.jpeg" },
+        { name: "Naveen Singh Farshwan", image: "/naveen_singh_farshwan.jpeg" },
+        { name: "Manpreet Singh", image: "/manpreet_singh.png" }
       ] 
     },
     { 
