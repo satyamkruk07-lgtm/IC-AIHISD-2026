@@ -14,13 +14,13 @@ export default function Committee() {
     {
       title: "Chief Patron",
       members: [
-        { 
-          name: "MR. SUNIL KUMAR", 
+        {
+          name: "MR. SUNIL KUMAR",
           role: "CHAIRMAN",
           image: "/chairman_img.png"
         },
-        { 
-          name: "MR. AJAY KUMAR", 
+        {
+          name: "MR. AJAY KUMAR",
           role: "PRESIDENT",
           image: "/ViceChairman_ShivalikCollege.jpg"
         }
@@ -29,8 +29,8 @@ export default function Committee() {
     {
       title: "Patron",
       members: [
-        { 
-          name: "PROF. (DR.) SANJEEV KUMAR BHALLA", 
+        {
+          name: "PROF. (DR.) SANJEEV KUMAR BHALLA",
           role: "VICE CHANCELLOR",
           image: "/sanjeev_bhalla.jpg"
         }
@@ -39,13 +39,13 @@ export default function Committee() {
     {
       title: "Co-Patron(S)",
       members: [
-        { 
-          name: "DR. SANTOSH KUMAR JOSHI", 
+        {
+          name: "DR. SANTOSH KUMAR JOSHI",
           role: "PROFESSOR, DEAN R&D",
           image: "/Santosh-JoshI.jpg"
         },
-        { 
-          name: "DR. SURMADHUR PANT", 
+        {
+          name: "DR. SURMADHUR PANT",
           role: "DEAN ACADMICS",
           image: "/PANT-SIR.webp"
         },
@@ -59,13 +59,13 @@ export default function Committee() {
     {
       title: "Convener",
       members: [
-        { 
-          name: "ER. KSHITIJ JAIN", 
+        {
+          name: "ER. KSHITIJ JAIN",
           role: "ASSISTANT PROFESSOR",
           image: "/kshitijjain-DvrFwvbC.jpg"
         },
-        { 
-          name: "DR. DEV BALONI", 
+        {
+          name: "DR. DEV BALONI",
           role: "HEAD CSE",
           image: "/dev_baloni.jpeg"
         }
@@ -74,13 +74,13 @@ export default function Committee() {
     {
       title: "Co - Convener",
       members: [
-        { 
-          name: "ER. AJAY VERMA", 
+        {
+          name: "ER. AJAY VERMA",
           role: "ASSOCIATE DEAN, CBII",
           image: "/ajay_verma.jpg"
         },
-        { 
-          name: "ER. KULDEEP GODIYAL", 
+        {
+          name: "ER. KULDEEP GODIYAL",
           role: "ASSOCIATE PROFESSOR",
           image: "/kuldeep.png"
         }
@@ -89,13 +89,13 @@ export default function Committee() {
     {
       title: "Organizing Secretary",
       members: [
-        { 
-          name: "DR. SONO BHARDWAJ", 
+        {
+          name: "DR. SONO BHARDWAJ",
           role: "ASSOCIATE PROFESSOR",
           image: "/sono_bhardwaj.jpeg"
         },
-        { 
-          name: "DR. AMIT SEMWAL", 
+        {
+          name: "DR. AMIT SEMWAL",
           role: "HOD COLLEGE OF PHARMACY",
           image: "/amit_semwal.webp"
         }
@@ -108,9 +108,9 @@ export default function Committee() {
       {showImage && (
         <div className="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-med-blue/20 shadow-sm transition-transform hover:scale-105 flex items-center justify-center bg-slate-50">
           {person.image ? (
-            <img 
-              src={person.image} 
-              alt={person.name} 
+            <img
+              src={person.image}
+              alt={person.name}
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
@@ -148,7 +148,7 @@ export default function Committee() {
           {committeeData.map((section, idx) => (
             <div key={idx} className="mb-8 last:mb-0">
               {/* Section Header */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -165,7 +165,7 @@ export default function Committee() {
                 {section.members.length === 2 && (
                   <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-black hidden sm:block -translate-x-1/2 z-0" />
                 )}
-                
+
                 <div className={cn(
                   "grid gap-4 w-full relative z-10",
                   section.members.length === 1 
