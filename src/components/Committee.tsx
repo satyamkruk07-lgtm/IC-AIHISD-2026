@@ -48,6 +48,11 @@ export default function Committee() {
           name: "DR. SURMADHUR PANT", 
           role: "DEAN ACADMICS",
           image: "/PANT-SIR.webp"
+        },
+        { 
+          name: "PROF. (DR.) SAYANTAN MUKHOPADHYAY", 
+          role: "PRINCIPAL, COLLEGE OF PHARMACY",
+          image: "/Dr.-Sayantan.png"
         }
       ]
     },
@@ -162,18 +167,29 @@ export default function Committee() {
                 )}
                 
                 <div className={cn(
-                  "grid gap-4 w-full max-w-4xl relative z-10",
-                  section.members.length === 1 ? "grid-cols-1 justify-items-center" : "grid-cols-1 sm:grid-cols-2"
+                  "grid gap-4 w-full relative z-10",
+                  section.members.length === 1 
+                    ? "grid-cols-1 justify-items-center max-w-4xl" 
+                    : section.members.length === 3 
+                    ? "grid-cols-1 sm:grid-cols-3 justify-items-center max-w-5xl" 
+                    : "grid-cols-1 sm:grid-cols-2 max-w-4xl"
                 )}>
                   {section.members.map((person, pIdx) => (
                     <motion.div
                       key={pIdx}
-                      initial={{ opacity: 0, x: pIdx === 0 && section.members.length === 2 ? -20 : 20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
+                      initial={{ 
+                        opacity: 0, 
+                        x: section.members.length === 2 ? (pIdx === 0 ? -20 : 20) : 0,
+                        y: section.members.length !== 2 ? 20 : 0
+                      }}
+                      whileInView={{ opacity: 1, x: 0, y: 0 }}
                       viewport={{ once: true }}
-                      className="flex justify-center"
+                      className="flex justify-center w-full relative"
                     >
                       <MemberDisplay person={person} />
+                      {section.members.length === 3 && pIdx < 2 && (
+                        <div className="absolute right-0 top-4 bottom-4 w-[2px] bg-black hidden sm:block z-0" />
+                      )}
                     </motion.div>
                   ))}
                 </div>
