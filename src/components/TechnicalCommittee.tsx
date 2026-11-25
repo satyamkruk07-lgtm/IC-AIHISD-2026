@@ -101,7 +101,17 @@ export default function TechnicalCommittee() {
         { name: "Himanshu Kumar", role: "Media Head (ACM)", image: "/himanshu.jpeg" },
         { name: "Shubham Shah", role: "ACM Member", image: "/shubham.jpeg" },
         { name: "Prachi Rawat", role: "ACM Member", image: "/prachi.jpeg" },
-        { name: "Srishti Raj", role: "ACM Member", image: "/srishti.jpeg" }
+        { name: "Srishti Raj", role: "ACM Member", image: "/srishti.jpeg" },
+        { name: "Anushka Gupta", role: "ACM Member", image: "/anushka-gupta.jpg" },
+        { name: "Abhinav Gupta", role: "ACM Member", image: "/abhinav-gupta.png" },
+        { name: "Roopam Sinha", role: "ACM Member", image: "/roopam-sinha.jpeg" },
+        { name: "Ashish Kumar Jha", role: "ACM Member", image: "/ashish-jha.jpg" },
+        { name: "Prachi Priya", role: "ACM Member", image: "/prachi-priya.jpg" },
+        { name: "Ayushi", role: "ACM Member", image: "/ayushi-raj.jpg" },
+        { name: "Bhairavi Singh", role: "ACM Member", image: "/bhairavi-singh.jpg" },
+        { name: "Anwar Hussain", role: "ACM Member", image: "/anwar-hussain.jpg" },
+        { name: "Abhinav Mishra", role: "ACM Member", image: "/abhinav-mishra.png" },
+        { name: "Aakriti Gupta", role: "ACM Member", image: "/aakriti-gupta.jpg" }
       ]
     }
   ];
